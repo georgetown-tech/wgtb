@@ -1,0 +1,184 @@
+/*
+ Theme Name:     Ciola Child
+ Theme URI:      http://themeforest.net/item/ciola-premium-responsive-wordpress-magazine/4720319
+ Description:    Ciola Child Theme
+ Author:         Cubell
+ Author URI:     http://themeforest.net/user/cubell
+ Template:       Ciola
+ Version:        2.4.0
+*/
+
+
+/* =Theme customization starts here. Any CSS code entered here will overwrite the parent's CSS.
+-------------------------------------------------------------- */
+
+
+
+#breaking-news-banner {background: url(./../images/breaking-news-banner.png) repeat-x; height: 39px; }
+#cb-top-menu {background: none;}
+
+#social-media ul li {float: left; padding-right: 3px}
+#social-media ul li:last-child {padding-right: 0px}
+#banner a {display: block; line-height: 0;}
+#cb-inner-header {padding-bottom: 0px}
+.cb-main-menu ul {background: #c3265b}
+.main-nav li a {
+color: #fff;}
+
+li.cb-search {display: none}
+.main-nav li a {padding: 12px 18px;}
+
+#banner {position: relative}
+#banner img.listen-live {position: absolute; right: 30px; top: 40px; width:230px}
+
+
+#footer { border-top: 7px solid #ccc; background: #e2e2e2; clear: both; float: left;
+width: 100%; height: 100%}
+#footer .footer-wrapper { width: 960px; margin: auto; padding: 47px 0 150px; color: #282828; position: relative; }
+#footer .footer-wrapper .footer-logo { position: absolute; top: 48px; right: 3px; }
+#footer .widget {font-family: Georgia, Arial, sans-serif; width: 177px; font-size: 13px; float: left; margin: 0 123px 0 0; }
+#footer .widget h2 {font-family: Georgia, Arial, sans-serif; font-weight: bold; font-size: 17px; color: #282828; background: url(./../images/footer-headline-border.gif) repeat-x 0 100%; line-height: 20px; padding: 0 0 13px; margin: 0 0 14px; }
+#footer #block-3 h2 { margin-bottom: 9px; }
+#footer .widget p {font-family: Georgia, Arial, sans-serif; line-height: 24px; }
+#footer .widget li { font-family: Georgia, Arial, sans-serif; border-bottom: 1px solid #c9c9c9; line-height: 14px; padding: 0 0 9px; margin: 0 0 6px; }
+#footer .widget li:last-child { border: none; }
+#footer .widget a { color: #282828; }
+#footer .widget a:hover, #footer .widget a:focus { color: #8a8a8a; }
+
+.flexslider-g .cb-category {display:none}
+
+.cb-category {display: none}
+
+
+
+@media (max-width: 1019px) {
+
+#banner img.listen-live {width: 200px;}
+
+}
+
+@media (max-width: 767px) {
+
+#banner img.listen-live {width: 125px; right: 0px;}
+#cb-mob-dropdown-main {
+width: 100%;
+}
+#cb-mob-dropdown-top, #cb-mob-dropdown-main {
+background: url(./../images/mob-dropdown.png) top center no-repeat;
+margin-left: 0px
+}
+}
+
+
+@media (max-width: 480px) {
+
+#banner img.listen-live {width: 120px; right: 0px; top: 5px}
+
+}
+
+/*ClearWeb MGMT code here: */
+#archives-2 ul li {
+margin-bottom:5px !important;
+}
+
+.cb-breaking-news span {color: white !important}
+.cb-breaking-news h3 {color: white}
+.cb-breaking-news h3 a {color: white } 
+.cb-breaking-news ul .showtime-now-playing h3.current-show a { color:white}
+
+.flexslider-g h2 a {
+font-family:'Open Sans', sans-serif;
+}
+
+#footer h3, p, ul li a{
+font-family:'Open Sans', sans-serif;
+}
+
+/*Sticky Nav Stylings*/
+.stickymenu{
+position:fixed;
+top:0px;
+z-index:999999;
+left:50%;
+margin-left:-510px;
+background:transparent;
+}
+
+@media (max-width:1019px) {
+	.stickymenu {
+	margin-left:-381px;
+	}
+}
+/*End Sticky Nav Stylings*/
+
+.cb-breaking-news ul .showtime-now-playing  h3.current-show{
+font-size:18px;
+line-height:1;
+}
+
+.cb-breaking-news ul .showtime-now-playing {
+float:left;
+}
+
+.cb-breaking-news ul .showtime-now-playing  h3.upcoming-show{
+display:none;
+}
+.cb-breaking-news ul .showtime-now-playing  span{
+display:none;
+}
+
+/*Sidebar Showtime widget styling*/
+#cb-sidebar .cb-sidebar-widget .showtime-now-playing h3 {
+font-size: 18px;
+/*text-align: center;*/
+margin-bottom:0px;
+}
+
+#cb-sidebar .cb-sidebar-widget .showtime-now-playing span {
+display:block;
+font-size: 18px;
+/*text-align: center;*/
+margin-bottom:10px;
+}
+
+#showtime-2 .cb-sidebar-widget-title {
+margin-bottom:5px;
+}
+
+
+
+.cb-footer {
+font-size: 14px;
+clear: both;
+background: none;
+}
+
+
+
+.cb-footer .cb-footer-widget-title {
+font-family: Georgia, Arial, sans-serif;
+font-weight: bold;
+font-size: 17px;
+color: #282828;
+background: url(./../images/footer-headline-border.gif) repeat-x 0 100%;
+line-height: 20px;
+padding: 0 0 13px;
+margin: 0 0 14px;
+}
+
+
+div.cb-footer-widget ul li {
+font-family: Georgia, Arial, sans-serif;
+border-bottom: 1px solid #c9c9c9;
+line-height: 14px;
+padding: 0 0 9px;
+margin: 0 0 6px;
+}
+
+.cb-footer a {
+color: #000;
+}
+
+.cb-footer a:hover {
+color: #333;
+}
