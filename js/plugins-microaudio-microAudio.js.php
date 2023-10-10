@@ -1,3 +1,0 @@
-//uAudio(c)http://compu.terlicio.us/
-mAjQ(document).ready(function(){pplr();});
-function pplr(){mAjQ("a[href$='mp3']").live("click",function(){if(!mAjQ(this).hasClass("mAa")){ var mae="<embed id='mAP' height='26' src='http:///wp-content/plugins/microaudio/plr.swf' class='adplr' type='application/x-shockwave-flash' flashvars='playerID=mAP&titles="+mAjQ(this).text()+"&soundFile="+mAjQ(this).attr("href")+"&autostart=' quality='high' menu='false' wmode='transparent' />";mAjQ(this).addClass("mAa").after("<div class='mAp' style='height: 26;'>"+mae+"</div>");}else{mAjQ(this).next().remove();mAjQ(this).removeClass("mAa").next().remove();}return false;});}
