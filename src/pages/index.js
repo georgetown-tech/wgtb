@@ -1,4 +1,6 @@
 import * as React from "react"
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const pageStyles = {
   color: "#232129",
@@ -121,6 +123,13 @@ const links = [
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
     color: "#663399",
   },
+  {
+    text: "homepage",
+    url: "/Users/kjpalmer24/GDT/WGTB/wgtb-site-beta/wgtb/src/pages/homepage",
+    description:
+      "Click here to visit the homepage of the WGTB Site",
+    color: "#663399",
+  }
 ]
 
 const IndexPage = () => {
@@ -170,6 +179,22 @@ const IndexPage = () => {
     </main>
   )
 }
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/blog' element={<TheRotation />} />
+        <Route path='/shows' element={<Shows />} />
+        <Route path='/schedule' element={<Schedule />} />
+        <Route path='/dj-services' element={<DjServices />} />
+        <Route path='/contact-us' element={<ContactUs />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </Router>
+  );
+}e
 
 export default IndexPage
 
