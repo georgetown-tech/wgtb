@@ -1,4 +1,6 @@
 import * as React from "react"
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const pageStyles = {
   color: "#232129",
@@ -170,6 +172,22 @@ const IndexPage = () => {
     </main>
   )
 }
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/blog' element={<TheRotation />} />
+        <Route path='/shows' element={<Shows />} />
+        <Route path='/schedule' element={<Schedule />} />
+        <Route path='/dj-services' element={<DjServices />} />
+        <Route path='/contact-us' element={<ContactUs />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </Router>
+  );
+}e
 
 export default IndexPage
 
