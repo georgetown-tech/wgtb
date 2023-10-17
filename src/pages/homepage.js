@@ -1,5 +1,5 @@
 import * as React from 'react'
-// import Navbar from '../../components/navbar/Navbar';
+import Navbar from "../components/navbar/Navbar"
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const pageStyles = {
@@ -79,28 +79,14 @@ const pageStyles = {
     lineHeight: 1,
   }
 
-  // function App() {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Routes>
-//         <Route path='/' element={<Home />} />
-//         <Route path='/blog' element={<TheRotation />} />
-//         <Route path='/shows' element={<Shows />} />
-//         <Route path='/schedule' element={<Schedule />} />
-//         <Route path='/dj-services' element={<DjServices />} />
-//         <Route path='/contact-us' element={<ContactUs />} />
-//         <Route path='/about' element={<About />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
   const Header = () => {
     return(
+      <div>
+        <Navbar />
         <h1 style = {headingStyles}>
             Georgetown Radio
         </h1>
+      </div>
     )
   }
 
@@ -109,5 +95,6 @@ export const Head = () => <title>Home Page</title>
 
 // Step 3: Export your component
 export default Header
+
 
 

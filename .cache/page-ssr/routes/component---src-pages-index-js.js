@@ -17,9 +17,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-// import Navbar from '../../components/navbar/Navbar';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 const pageStyles = {
   color: "#232129",
   padding: 96,
@@ -91,7 +88,43 @@ const badgeStyle = {
   marginLeft: 10,
   lineHeight: 1
 };
-const links = [{
+const radiolinks = [{
+  text: "homepage",
+  url: "./homepage",
+  description: "Click here to visit the homepage of the WGTB Site",
+  color: "#663399"
+}, {
+  text: "blog",
+  url: "./blog",
+  description: "Click here to visit the blog page (The Rotation)",
+  color: "#663399"
+}, {
+  text: "shows",
+  url: "./shows",
+  description: "Click here to visit the shows page",
+  color: "#663399"
+}, {
+  text: "schedule",
+  url: "./schedule",
+  description: "Click here...",
+  color: "#663399"
+}, {
+  text: "DJ Services",
+  url: "./dj-services",
+  description: "Click here...",
+  color: "#663399"
+}, {
+  text: "contact us",
+  url: "./contact.us",
+  description: "Click here...",
+  color: "#663399"
+}, {
+  text: "about",
+  url: "./about",
+  description: "Click here...",
+  color: "#663399"
+}];
+const gatsbylinks = [{
   text: "Tutorial",
   url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
   description: "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
@@ -141,12 +174,28 @@ const IndexPage = () => {
     style: codeStyles
   }, "src/pages/index.js"), " to see this page update in real-time. \uD83D\uDE0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
     style: listStyles
+  }, radiolinks.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    key: link.url,
+    style: {
+      ...listItemStyles,
+      color: link.color
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    style: linkStyle,
+    href: `${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`
+  }, link.text), link.badge && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    style: badgeStyle,
+    "aria-label": "New Badge"
+  }, "NEW!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    style: descriptionStyle
+  }, link.description))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    style: listStyles
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     style: docLinkStyle
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     style: linkStyle,
     href: `${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`
-  }, docLink.text)), links.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+  }, docLink.text)), gatsbylinks.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     key: link.url,
     style: {
       ...listItemStyles,
