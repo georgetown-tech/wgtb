@@ -92,7 +92,8 @@ exports.components = {
   "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-js */ "component---cache-dev-404-page-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=default */ "./.cache/dev-404-page.js?export=default")),
   "component---src-pages-404-js": () => __webpack_require__.e(/*! import() | component---src-pages-404-js */ "component---src-pages-404-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/404.js?export=default */ "./src/pages/404.js?export=default")),
   "component---src-pages-homepage-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-js */ "component---src-pages-homepage-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage.js?export=default */ "./src/pages/homepage.js?export=default")),
-  "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default"))
+  "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default")),
+  "component---src-pages-rotation-js": () => __webpack_require__.e(/*! import() | component---src-pages-rotation-js */ "component---src-pages-rotation-js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./../../../src/pages/rotation.js?export=default */ "./src/pages/rotation.js?export=default", 23))
 };
 
 exports.head = {
