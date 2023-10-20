@@ -1,6 +1,6 @@
 var plugins = [{
       name: 'partytown',
-      plugin: require('/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/Users/sunilrosen/Documents/GitHub/wgtb/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */
