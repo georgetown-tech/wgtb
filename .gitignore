@@ -1,0 +1,2 @@
+# Contains file types that we do not want to push to GitHub
+.DS_Store
