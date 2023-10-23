@@ -8,7 +8,11 @@ exports.components = {
   "component---src-pages-homepage-js": () => import("./../../../src/pages/homepage.js?export=default" /* webpackChunkName: "component---src-pages-homepage-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=default" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-schedule-js": () => import("./../../../src/pages/schedule.js?export=default" /* webpackChunkName: "component---src-pages-schedule-js" */),
-  "component---src-pages-shows-js": () => import("./../../../src/pages/shows.js?export=default" /* webpackChunkName: "component---src-pages-shows-js" */)
+  "component---src-pages-shows-bye-bye-miss-american-thighs-js": () => import("./../../../src/pages/shows/bye-bye-miss-american-thighs.js?export=default" /* webpackChunkName: "component---src-pages-shows-bye-bye-miss-american-thighs-js" */),
+  "component---src-pages-shows-fiona-apples-and-oranges-js": () => import("./../../../src/pages/shows/fiona-apples-and-oranges.js?export=default" /* webpackChunkName: "component---src-pages-shows-fiona-apples-and-oranges-js" */),
+  "component---src-pages-shows-js": () => import("./../../../src/pages/shows.js?export=default" /* webpackChunkName: "component---src-pages-shows-js" */),
+  "component---src-pages-shows-no-rock-just-pebbles-js": () => import("./../../../src/pages/shows/no-rock-just-pebbles.js?export=default" /* webpackChunkName: "component---src-pages-shows-no-rock-just-pebbles-js" */),
+  "component---src-pages-shows-unsolicited-and-out-of-the-loop-js": () => import("./../../../src/pages/shows/unsolicited-and-out-of-the-loop.js?export=default" /* webpackChunkName: "component---src-pages-shows-unsolicited-and-out-of-the-loop-js" */)
 }
 
 
