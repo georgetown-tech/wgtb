@@ -1,0 +1,14 @@
+/* styling for layout component */
+.container{
+    max-width: 500px;
+}
+.heading{
+    color: purple;
+}
+.headerImage{
+    width: 80%;
+    align-self: center;
+}
+.socialContainer{
+    max-width: 400px;
+}
