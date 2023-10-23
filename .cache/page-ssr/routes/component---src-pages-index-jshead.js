@@ -88,7 +88,43 @@ const badgeStyle = {
   marginLeft: 10,
   lineHeight: 1
 };
-const links = [{
+const radiolinks = [{
+  text: "homepage",
+  url: "./homepage",
+  description: "Click here to visit the homepage of the WGTB Site",
+  color: "#663399"
+}, {
+  text: "blog",
+  url: "./blog",
+  description: "Click here to visit the blog page (The Rotation)",
+  color: "#663399"
+}, {
+  text: "shows",
+  url: "./shows",
+  description: "Click here to visit the shows page",
+  color: "#663399"
+}, {
+  text: "schedule",
+  url: "./schedule",
+  description: "Click here...",
+  color: "#663399"
+}, {
+  text: "DJ Services",
+  url: "./dj-services",
+  description: "Click here...",
+  color: "#663399"
+}, {
+  text: "contact us",
+  url: "./contact.us",
+  description: "Click here...",
+  color: "#663399"
+}, {
+  text: "about",
+  url: "./about",
+  description: "Click here...",
+  color: "#663399"
+}];
+const gatsbylinks = [{
   text: "Tutorial",
   url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
   description: "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
@@ -121,7 +157,7 @@ const links = [{
   color: "#663399"
 }, {
   text: "homepage",
-  url: "/Users/kjpalmer24/GDT/WGTB/wgtb-site-beta/wgtb/src/pages/homepage",
+  url: "./homepage",
   description: "Click here to visit the homepage of the WGTB Site",
   color: "#663399"
 }];
@@ -138,12 +174,28 @@ const IndexPage = () => {
     style: codeStyles
   }, "src/pages/index.js"), " to see this page update in real-time. \uD83D\uDE0E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
     style: listStyles
+  }, radiolinks.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    key: link.url,
+    style: {
+      ...listItemStyles,
+      color: link.color
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    style: linkStyle,
+    href: `${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`
+  }, link.text), link.badge && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    style: badgeStyle,
+    "aria-label": "New Badge"
+  }, "NEW!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    style: descriptionStyle
+  }, link.description))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    style: listStyles
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     style: docLinkStyle
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     style: linkStyle,
     href: `${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`
-  }, docLink.text)), links.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+  }, docLink.text)), gatsbylinks.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     key: link.url,
     style: {
       ...listItemStyles,
@@ -162,6 +214,23 @@ const IndexPage = () => {
     src: "data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
   }));
 };
+// function App() {
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Routes>
+//         <Route path='/' element={<Home />} />
+//         <Route path='/blog' element={<TheRotation />} />
+//         <Route path='/shows' element={<Shows />} />
+//         <Route path='/schedule' element={<Schedule />} />
+//         <Route path='/dj-services' element={<DjServices />} />
+//         <Route path='/contact-us' element={<ContactUs />} />
+//         <Route path='/about' element={<About />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", null, "Home Page");
 
