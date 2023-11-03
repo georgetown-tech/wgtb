@@ -1,6 +1,4 @@
 import * as React from "react"
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const pageStyles = {
   color: "#232129",
@@ -79,7 +77,58 @@ const badgeStyle = {
   lineHeight: 1,
 }
 
-const links = [
+const radiolinks = [
+  {
+    text: "homepage",
+    url: "./homepage",
+    description:
+      "Click here to visit the homepage of the WGTB Site",
+    color: "#663399",
+  }, 
+  {
+    text: "blog",
+    url: "./blog",
+    description:
+      "Click here to visit the blog page (The Rotation)",
+    color: "#663399",
+  }, 
+  {
+    text: "shows",
+    url: "./shows",
+    description:
+      "Click here to visit the shows page",
+    color: "#663399",
+  }, 
+  {
+    text: "schedule",
+    url: "./schedule",
+    description:
+      "Click here...",
+    color: "#663399",
+  }, 
+  {
+    text: "DJ Services",
+    url: "./dj-services",
+    description:
+      "Click here...",
+    color: "#663399",
+  }, 
+  {
+    text: "contact us",
+    url: "./contact.us",
+    description:
+      "Click here...",
+    color: "#663399",
+  }, 
+  {
+    text: "about",
+    url: "./about",
+    description:
+      "Click here...",
+    color: "#663399",
+  }, 
+]
+const gatsbylinks = [
   {
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
@@ -125,7 +174,7 @@ const links = [
   },
   {
     text: "homepage",
-    url: "/Users/kjpalmer24/GDT/WGTB/wgtb-site-beta/wgtb/src/pages/homepage",
+    url: "./homepage",
     description:
       "Click here to visit the homepage of the WGTB Site",
     color: "#663399",
@@ -144,6 +193,28 @@ const IndexPage = () => {
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time. 😎
       </p>
+{/* WGTB pages */}
+      <ul style={listStyles}>
+        {radiolinks.map(link => (
+          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+            <span>
+              <a
+                style={linkStyle}
+                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+              >
+                {link.text}
+              </a>
+              {link.badge && (
+                <span style={badgeStyle} aria-label="New Badge">
+                  NEW!
+                </span>
+              )}
+              <p style={descriptionStyle}>{link.description}</p>
+            </span>
+          </li>
+        ))}
+      </ul>
+{/* Gatsby Resources */}
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
@@ -153,7 +224,7 @@ const IndexPage = () => {
             {docLink.text}
           </a>
         </li>
-        {links.map(link => (
+        {gatsbylinks.map(link => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
               <a
@@ -179,22 +250,8 @@ const IndexPage = () => {
     </main>
   )
 }
-function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/blog' element={<TheRotation />} />
-        <Route path='/shows' element={<Shows />} />
-        <Route path='/schedule' element={<Schedule />} />
-        <Route path='/dj-services' element={<DjServices />} />
-        <Route path='/contact-us' element={<ContactUs />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
-    </Router>
-  );
-}e
+
+
 
 export default IndexPage
 
