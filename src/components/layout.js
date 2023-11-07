@@ -10,7 +10,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div className={container}>
+    <div>
       <main>
         <Link to= "/homepage">
           <StaticImage src="../images/headerLogo.png" className={headerImage} alt="logo header"/>

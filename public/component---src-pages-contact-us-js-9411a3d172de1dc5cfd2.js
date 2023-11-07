@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwgtb_site_beta=self.webpackChunkwgtb_site_beta||[]).push([[60],{494:function(t,e,a){a.r(e),a.d(e,{Head:function(){return c}});var n=a(7294);const s={marginTop:0,marginBottom:64,maxWidth:320},c=()=>n.createElement("title",null,"Home Page");e.default=()=>n.createElement("h1",{style:s},"Contact Us")}}]);
+//# sourceMappingURL=component---src-pages-contact-us-js-9411a3d172de1dc5cfd2.js.map
