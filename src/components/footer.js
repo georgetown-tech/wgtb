@@ -1,7 +1,6 @@
 import React from "react";
-import {Link} from "gatsby";
 
-const footer = () => {
+const Footer = () => {
     return (
     <div id="cb-footer-inner" class="clearfix">
         <div class="cb-footer-widget clearfix first">
@@ -115,7 +114,7 @@ const footer = () => {
             </div>
         </div>
     </div>
-    );
-};  
+        );
+};
 
-export default footer;
+export default Footer;
