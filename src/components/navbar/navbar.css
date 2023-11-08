@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Import a different font */
+
+.main-menu {
+  background-color: white; /* Change background color as needed */
+  padding: 10px 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black; /* Change text color as needed */
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 10px 40px; /* Adjust as needed */
+  background-color: white; /* Change as needed */
+  border: 1px solid black; /* Add border */
+  border-radius: 5px; /* Optional: to make the containers rounded */
+  font-family: 'Roboto', sans-serif; /* Change font */
+}
+
+.navbar li a:hover {
+  color: white; /* Change hover color as needed */
+  background-color: black; /* Change hover background color */
+}
