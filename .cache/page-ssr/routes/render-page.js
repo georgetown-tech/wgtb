@@ -1551,8 +1551,7 @@ exports.head = {
   "component---src-pages-dj-services-js": () => __webpack_require__.e(/*! import() | component---src-pages-dj-services-jshead */ "component---src-pages-dj-services-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/dj-services.js?export=head */ "./src/pages/dj-services.js?export=head")),
   "component---src-pages-homepage-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-jshead */ "component---src-pages-homepage-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage.js?export=head */ "./src/pages/homepage.js?export=head")),
   "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-jshead */ "component---src-pages-index-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=head */ "./src/pages/index.js?export=head")),
-  "component---src-pages-schedule-js": () => __webpack_require__.e(/*! import() | component---src-pages-schedule-jshead */ "component---src-pages-schedule-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/schedule.js?export=head */ "./src/pages/schedule.js?export=head")),
-  "component---src-pages-shows-js": () => __webpack_require__.e(/*! import() | component---src-pages-shows-jshead */ "component---src-pages-shows-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/shows.js?export=head */ "./src/pages/shows.js?export=head"))
+  "component---src-pages-schedule-js": () => __webpack_require__.e(/*! import() | component---src-pages-schedule-jshead */ "component---src-pages-schedule-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/schedule.js?export=head */ "./src/pages/schedule.js?export=head"))
 };
 
 /***/ }),
