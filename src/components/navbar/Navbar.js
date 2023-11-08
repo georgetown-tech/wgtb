@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from "gatsby";
-import "./navbar.css"; 
+import {navbar} from './navbar.module.css'; // Import the CSS module
 
 const Navbar = () => {
   return (
-    <div className="main-menu">
-      <ul className="navbar">
+    <div className={navbar}>
+      <ul>
       <li>
           <Link to="/homepage">Home</Link>
         </li>
