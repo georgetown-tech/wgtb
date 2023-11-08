@@ -1,14 +1,12 @@
 /* styling for navbar */
-  
   .navbar {
+    
     background-color: #91a1ff; /* A dark background for the navbar */
-    color: rgb(114, 33, 33);
-    display: flex; /* Using flexbox to align items */
-    justify-content: space-between; /* This will separate your nav items and logo */
-    align-items: center; /* This will vertically center your items */
-    padding: 0 5px; /* Add padding on the sides */
-    min-height: 60px; /* Or any other height you prefer */
-    width: 100%; /* This ensures that your navbar takes up the full width */
+    align-items: center;
+    display: inline-block;
+    padding: 0;
+    min-height: 50px;
+    max-width: 70%;
   }
 
   /* Remove bullet points and update font styles for navbar links */
@@ -17,29 +15,28 @@
     margin: 0;
     padding: 0;
     display: flex; /* Display list items in a row */
-    justify-content: space-around;
+    justify-content: left;
     width: 100%;
     align-items: center; /* Center-align items for vertical alignment */
   }
   
   .navbar li {
-    display: block;
-    text-align: center; /* Center text in each list item */
-    padding: 0 15px; /* Adjust padding to your preference */
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
   
   .navbar a {
     display: block; /* Make the links take up the full space of the <li> */
     text-decoration: none; /* Optional: removes the underline */
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white; /* Sets the color of your links to white */
     text-decoration: none; /* Removes the underline from links */
-    margin: 0 10px; /* Adds margin between the links */
   }
   
   .navbar a:hover {
-    color: #9c9c9c; /* Color of links when you hover over them */
+    background-color: #b4b4b4;
   }
   
