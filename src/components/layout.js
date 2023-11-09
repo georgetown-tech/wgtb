@@ -1,12 +1,12 @@
-import * as React from 'react'
-import Navbar from "./navbar/Navbar"
-import {Link} from 'gatsby'
+import * as React from 'react';
+import Navbar from "./navbar/Navbar";
 import{container,
 heading,
 headerImage,
 socialContainer
-} from "./layout.module.css"
-import { StaticImage } from 'gatsby-plugin-image'
+} from "./layout.module.css";
+import {Link} from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -35,8 +35,9 @@ const Layout = ({ pageTitle, children }) => {
       <nav>
         <Navbar/>
       </nav>
+      
     </div>
   )
 }
 
-export default Layout
+export default Layout;

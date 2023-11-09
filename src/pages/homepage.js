@@ -1,6 +1,7 @@
 import * as React from 'react'
 //import Navbar from "../components/navbar/Navbar"
 import Layout from "../components/layout"
+import Footer from "/Users/gaiagoulandris/Documents/GitHub/wgtb/src/components/footer.js"
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import{slides,
@@ -149,6 +150,11 @@ const Homepage = () => {
           </li>
         </ul>
       </section>
+    {/* FOOTER */}
+      <footer>
+        <Footer>
+        </Footer>
+      </footer>
     </div>
   )
 }
