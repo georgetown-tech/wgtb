@@ -1,14 +1,12 @@
 import * as React from 'react'
 //import Navbar from "../components/navbar/Navbar"
 import Layout from "../components/layout"
-import Reviews from "/Users/gaiagoulandris/Documents/GitHub/wgtb/src/components/Reviews.js"
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import{slides,
 reviews,
 playlists,
-slideImage,
-slideDescription
+slideImage
 } from "./homepage.module.css"
 
 const Homepage = () => {
@@ -30,7 +28,7 @@ const Homepage = () => {
                 href="http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
                 >Preview: Janelle Monáe @ the Anthem 9/24 &#038; 9/25</a>
             </h2>
-            <div className={slideDescription}>
+            <div>
               Janelle Monáe brings the Age of Pleasure tour to DC for two
               consecutive nights at the Anthem,...
             </div>
@@ -80,8 +78,39 @@ const Homepage = () => {
         </ul>
       </section>
 {/* REVIEWS */}
-  <Reviews>
-      </Reviews>
+      <section className={reviews}>
+        <h2>Single Review</h2>
+        <article>
+          <div>
+            <Link>
+              <StaticImage
+                src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2021/03/hitlikeagirl-emilyberger.jpg?resize=350%2C200"
+                alt=""
+                />
+            </Link>
+          </div>
+          <h3>
+            Hit Like A Girl’s Newest Single “Monsters” is an Anthem for the Forgotten
+          </h3>
+          <p>
+            Hit Like A Girl’s newest single, “Monsters”, came out on March
+            16, 2021. "Monsters" is the second single shared from their
+            third album, Heart Racer, which will be released on April 2nd
+            through...
+          </p>
+        </article>
+        <h2>Album Reviews</h2>
+          <article>
+            <div>
+              <Link>
+                <StaticImage>
+                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/01/og_image.jpg?resize=350%2C200"
+                  alt=""
+                </StaticImage>
+              </Link>
+            </div>
+          </article>
+      </section>
 {/* PLAYLIST */}
       <section className={playlists}>
         <h2>Playlists</h2>
