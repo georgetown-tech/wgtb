@@ -149,23 +149,6 @@ var socialContainer = "layout-module--socialContainer--26e60";
 
 /***/ }),
 
-/***/ "./src/components/navbar/navbar.module.css":
-/*!*************************************************!*\
-  !*** ./src/components/navbar/navbar.module.css ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   navbar: () => (/* binding */ navbar)
-/* harmony export */ });
-// Exports
-var navbar = "navbar-module--navbar--89c55";
-
-
-/***/ }),
-
 /***/ "./src/pages/homepage.module.css":
 /*!***************************************!*\
   !*** ./src/pages/homepage.module.css ***!
@@ -2864,13 +2847,15 @@ const Layout = ({
   pageTitle,
   children
 }) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.container
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/homepage"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/headerLogo.png",
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.headerImage,
     alt: "logo header",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2874688043.json */ "./.cache/caches/gatsby-plugin-image/2874688043.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3875462259.json */ "./.cache/caches/gatsby-plugin-image/3875462259.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.socialContainer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
@@ -2878,25 +2863,25 @@ const Layout = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/facebook.png",
     alt: "Facebook",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3971946700.json */ "./.cache/caches/gatsby-plugin-image/3971946700.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2492189352.json */ "./.cache/caches/gatsby-plugin-image/2492189352.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "https://www.instagram.com/georgetownradio/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/instagram.png",
     alt: "Instagram",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4234772799.json */ "./.cache/caches/gatsby-plugin-image/4234772799.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3034447683.json */ "./.cache/caches/gatsby-plugin-image/3034447683.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "https://soundcloud.com/wgtb-rotation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/soundcloud.png",
     alt: "Soundcloud",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1500110469.json */ "./.cache/caches/gatsby-plugin-image/1500110469.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2917300013.json */ "./.cache/caches/gatsby-plugin-image/2917300013.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "https://twitter.com/wgtb"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/twitter.png",
     alt: "X",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2496181218.json */ "./.cache/caches/gatsby-plugin-image/2496181218.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1617368922.json */ "./.cache/caches/gatsby-plugin-image/1617368922.json")
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.heading
   }, pageTitle), children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
@@ -2919,15 +2904,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _navbar_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar.module.css */ "./src/components/navbar/navbar.module.css");
 
-
- // Import the CSS module
 
 const Navbar = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _navbar_module_css__WEBPACK_IMPORTED_MODULE_2__.navbar
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "main-menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "Navbar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/homepage"
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/blog"
@@ -2982,7 +2966,7 @@ const Homepage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/image.png?resize=1020%2C500",
     alt: "Janelle Monae",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/686248492.json */ "./.cache/caches/gatsby-plugin-image/686248492.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2789754765.json */ "./.cache/caches/gatsby-plugin-image/2789754765.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     href: "http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
   }, "Preview: Janelle Mon\xE1e @ the Anthem 9/24 & 9/25")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Janelle Mon\xE1e brings the Age of Pleasure tour to DC for two consecutive nights at the Anthem,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
@@ -2990,7 +2974,7 @@ const Homepage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/l7-1-1200x675-1.jpg?resize=1020%2C500",
     alt: "L7",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2021032550.json */ "./.cache/caches/gatsby-plugin-image/2021032550.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1092468628.json */ "./.cache/caches/gatsby-plugin-image/1092468628.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     class: "h3"
   }, "Preview: L7 & Tarah Who? @ The Black Cat, 9/18"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Though often associated with the early 90s grunge and riot grrrl explosion, LA-based band, L7,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
@@ -2998,7 +2982,7 @@ const Homepage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/cab-ellis.jpeg?resize=400%2C200",
     alt: "Cab Ellis",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1695153973.json */ "./.cache/caches/gatsby-plugin-image/1695153973.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2102002405.json */ "./.cache/caches/gatsby-plugin-image/2102002405.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     class: "h3"
   }, "The DC Hold On: Cab Ellis with Gooseberry and Alex Alavi & the Funky Breakfast @ The Pocket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Ask the average American how they picture the lives of young adults in the District of Columbia,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
@@ -3006,7 +2990,7 @@ const Homepage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/Screen-Shot-2023-02-04-at-7.22.27-PM.png?resize=852%2C458",
     alt: "Jockstrap",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/988613244.json */ "./.cache/caches/gatsby-plugin-image/988613244.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1650492614.json */ "./.cache/caches/gatsby-plugin-image/1650492614.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     class: "h3"
   }, "Jockstrap Makes DC9 Their Own"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "British duo Jockstrap kicked off their first ever North American tour at DC9 on November 17th. The...")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
@@ -3014,23 +2998,23 @@ const Homepage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Single Review"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2021/03/hitlikeagirl-emilyberger.jpg?resize=350%2C200",
     alt: "",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3883834591.json */ "./.cache/caches/gatsby-plugin-image/3883834591.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/796930257.json */ "./.cache/caches/gatsby-plugin-image/796930257.json")
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Hit Like A Girl\u2019s Newest Single \u201CMonsters\u201D is an Anthem for the Forgotten"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Hit Like A Girl\u2019s newest single, \u201CMonsters\u201D, came out on March 16, 2021. \"Monsters\" is the second single shared from their third album, Heart Racer, which will be released on April 2nd through...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Album Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    __error: "No data found for image \"undefined\"\n              undefinedCould not read image data file \"/Users/gaiagoulandris/Documents/GitHub/wgtb/.cache/caches/gatsby-plugin-image/397441536.json\". \nThis may mean that the images in \"/Users/gaiagoulandris/Documents/GitHub/wgtb/src/pages/homepage.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+    __error: "No data found for image \"undefined\"\n              undefinedCould not read image data file \"/Users/sunilrosen/Documents/GitHub/wgtb/.cache/caches/gatsby-plugin-image/1698389064.json\". \nThis may mean that the images in \"/Users/sunilrosen/Documents/GitHub/wgtb/src/pages/homepage.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
   }, "src=\"https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/01/og_image.jpg?resize=350%2C200\" alt=\"\""))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
     className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.playlists
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Playlists"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/09/fiona-apples-and-oranges.png?resize=380%2C380",
     alt: "",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1886943126.json */ "./.cache/caches/gatsby-plugin-image/1886943126.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1037645804.json */ "./.cache/caches/gatsby-plugin-image/1037645804.json")
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "FA&O: Fall Rotation Recommendations"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-2.55.23-PM.png?resize=380%2C380",
     alt: "",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4208094159.json */ "./.cache/caches/gatsby-plugin-image/4208094159.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/104975698.json */ "./.cache/caches/gatsby-plugin-image/104975698.json")
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Preview + Playlist: MICHELLE and Sidney Gish @ BDA"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/01/4641-1.jpeg?resize=380%2C380",
     alt: "",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1315480850.json */ "./.cache/caches/gatsby-plugin-image/1315480850.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3378225643.json */ "./.cache/caches/gatsby-plugin-image/3378225643.json")
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Playlist: Honeymoon in Paris"))))));
 };
 
@@ -4648,42 +4632,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1315480850.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1037645804.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1315480850.json ***!
-  \***********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#383838","images":{"fallback":{"src":"/static/5dfba6aa010f9e14e1964bfb892128b3/852aa/4641-1.jpg","srcSet":"/static/5dfba6aa010f9e14e1964bfb892128b3/2963c/4641-1.jpg 95w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/cc4c5/4641-1.jpg 190w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/852aa/4641-1.jpg 380w","sizes":"(min-width: 380px) 380px, 100vw"},"sources":[{"srcSet":"/static/5dfba6aa010f9e14e1964bfb892128b3/97e84/4641-1.webp 95w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/4366b/4641-1.webp 190w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/3f812/4641-1.webp 380w","type":"image/webp","sizes":"(min-width: 380px) 380px, 100vw"}]},"width":380,"height":380}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/1500110469.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1500110469.json ***!
-  \***********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f85808","images":{"fallback":{"src":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/b4b01/soundcloud.png","srcSet":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/255ab/soundcloud.png 14w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/aa0e3/soundcloud.png 29w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/b4b01/soundcloud.png 57w","sizes":"(min-width: 57px) 57px, 100vw"},"sources":[{"srcSet":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/6412b/soundcloud.webp 14w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/4c897/soundcloud.webp 29w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/e8582/soundcloud.webp 57w","type":"image/webp","sizes":"(min-width: 57px) 57px, 100vw"}]},"width":57,"height":57}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/1695153973.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1695153973.json ***!
-  \***********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282828","images":{"fallback":{"src":"/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg","srcSet":"/static/533e82e171fce365cfb267168c67cc3a/c8ee8/cab-ellis.jpg 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/ca582/cab-ellis.jpg 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg 400w","sizes":"(min-width: 400px) 400px, 100vw"},"sources":[{"srcSet":"/static/533e82e171fce365cfb267168c67cc3a/fd9c7/cab-ellis.webp 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/f201f/cab-ellis.webp 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/e8709/cab-ellis.webp 400w","type":"image/webp","sizes":"(min-width: 400px) 400px, 100vw"}]},"width":400,"height":200}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/1886943126.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1886943126.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1037645804.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4692,9 +4643,20 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2021032550.json":
+/***/ "./.cache/caches/gatsby-plugin-image/104975698.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/104975698.json ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/ac2c70041da32f493e6de3afab36cee2/6cc22/Screen-Shot-2022-02-21-at-2.55.23-PM.png","srcSet":"/static/ac2c70041da32f493e6de3afab36cee2/a14e0/Screen-Shot-2022-02-21-at-2.55.23-PM.png 95w,\\n/static/ac2c70041da32f493e6de3afab36cee2/a9207/Screen-Shot-2022-02-21-at-2.55.23-PM.png 190w,\\n/static/ac2c70041da32f493e6de3afab36cee2/6cc22/Screen-Shot-2022-02-21-at-2.55.23-PM.png 380w","sizes":"(min-width: 380px) 380px, 100vw"},"sources":[{"srcSet":"/static/ac2c70041da32f493e6de3afab36cee2/97e84/Screen-Shot-2022-02-21-at-2.55.23-PM.webp 95w,\\n/static/ac2c70041da32f493e6de3afab36cee2/4366b/Screen-Shot-2022-02-21-at-2.55.23-PM.webp 190w,\\n/static/ac2c70041da32f493e6de3afab36cee2/3f812/Screen-Shot-2022-02-21-at-2.55.23-PM.webp 380w","type":"image/webp","sizes":"(min-width: 380px) 380px, 100vw"}]},"width":380,"height":380}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/1092468628.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2021032550.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1092468628.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4703,9 +4665,9 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#081808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2496181218.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1617368922.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2496181218.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1617368922.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4714,31 +4676,31 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#08a8e8"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2874688043.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1650492614.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2874688043.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1650492614.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282858","images":{"fallback":{"src":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png","srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/4a28b/Screen-Shot-2023-02-04-at-7.22.27-PM.png 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/1d289/Screen-Shot-2023-02-04-at-7.22.27-PM.png 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png 852w","sizes":"(min-width: 852px) 852px, 100vw"},"sources":[{"srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/121f7/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/44bb4/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/fe61d/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 852w","type":"image/webp","sizes":"(min-width: 852px) 852px, 100vw"}]},"width":852,"height":458}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3883834591.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2102002405.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3883834591.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2102002405.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080818","images":{"fallback":{"src":"/static/98886cdb93495f7c8b8c194ff76e7689/e6180/hitlikeagirl-emilyberger.jpg","srcSet":"/static/98886cdb93495f7c8b8c194ff76e7689/fce97/hitlikeagirl-emilyberger.jpg 88w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/d6b18/hitlikeagirl-emilyberger.jpg 175w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/e6180/hitlikeagirl-emilyberger.jpg 350w","sizes":"(min-width: 350px) 350px, 100vw"},"sources":[{"srcSet":"/static/98886cdb93495f7c8b8c194ff76e7689/3c52c/hitlikeagirl-emilyberger.webp 88w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/745fa/hitlikeagirl-emilyberger.webp 175w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/b0f73/hitlikeagirl-emilyberger.webp 350w","type":"image/webp","sizes":"(min-width: 350px) 350px, 100vw"}]},"width":350,"height":200}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282828","images":{"fallback":{"src":"/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg","srcSet":"/static/533e82e171fce365cfb267168c67cc3a/c8ee8/cab-ellis.jpg 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/ca582/cab-ellis.jpg 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg 400w","sizes":"(min-width: 400px) 400px, 100vw"},"sources":[{"srcSet":"/static/533e82e171fce365cfb267168c67cc3a/fd9c7/cab-ellis.webp 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/f201f/cab-ellis.webp 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/e8709/cab-ellis.webp 400w","type":"image/webp","sizes":"(min-width: 400px) 400px, 100vw"}]},"width":400,"height":200}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3971946700.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2492189352.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3971946700.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2492189352.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4747,20 +4709,31 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#385898"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/4208094159.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2789754765.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/4208094159.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2789754765.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/ac2c70041da32f493e6de3afab36cee2/6cc22/Screen-Shot-2022-02-21-at-2.55.23-PM.png","srcSet":"/static/ac2c70041da32f493e6de3afab36cee2/a14e0/Screen-Shot-2022-02-21-at-2.55.23-PM.png 95w,\\n/static/ac2c70041da32f493e6de3afab36cee2/a9207/Screen-Shot-2022-02-21-at-2.55.23-PM.png 190w,\\n/static/ac2c70041da32f493e6de3afab36cee2/6cc22/Screen-Shot-2022-02-21-at-2.55.23-PM.png 380w","sizes":"(min-width: 380px) 380px, 100vw"},"sources":[{"srcSet":"/static/ac2c70041da32f493e6de3afab36cee2/97e84/Screen-Shot-2022-02-21-at-2.55.23-PM.webp 95w,\\n/static/ac2c70041da32f493e6de3afab36cee2/4366b/Screen-Shot-2022-02-21-at-2.55.23-PM.webp 190w,\\n/static/ac2c70041da32f493e6de3afab36cee2/3f812/Screen-Shot-2022-02-21-at-2.55.23-PM.webp 380w","type":"image/webp","sizes":"(min-width: 380px) 380px, 100vw"}]},"width":380,"height":380}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#181818","images":{"fallback":{"src":"/static/7445928b065ebb559207f9345b07d016/8d29c/image.png","srcSet":"/static/7445928b065ebb559207f9345b07d016/e95b1/image.png 255w,\\n/static/7445928b065ebb559207f9345b07d016/e3e67/image.png 510w,\\n/static/7445928b065ebb559207f9345b07d016/8d29c/image.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/7445928b065ebb559207f9345b07d016/2a009/image.webp 255w,\\n/static/7445928b065ebb559207f9345b07d016/42f59/image.webp 510w,\\n/static/7445928b065ebb559207f9345b07d016/f0920/image.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":500}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/4234772799.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2917300013.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/4234772799.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2917300013.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f85808","images":{"fallback":{"src":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/b4b01/soundcloud.png","srcSet":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/255ab/soundcloud.png 14w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/aa0e3/soundcloud.png 29w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/b4b01/soundcloud.png 57w","sizes":"(min-width: 57px) 57px, 100vw"},"sources":[{"srcSet":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/6412b/soundcloud.webp 14w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/4c897/soundcloud.webp 29w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/e8582/soundcloud.webp 57w","type":"image/webp","sizes":"(min-width: 57px) 57px, 100vw"}]},"width":57,"height":57}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/3034447683.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3034447683.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4769,25 +4742,36 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#c89868"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/686248492.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/686248492.json ***!
-  \**********************************************************/
+/***/ "./.cache/caches/gatsby-plugin-image/3378225643.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3378225643.json ***!
+  \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#181818","images":{"fallback":{"src":"/static/7445928b065ebb559207f9345b07d016/8d29c/image.png","srcSet":"/static/7445928b065ebb559207f9345b07d016/e95b1/image.png 255w,\\n/static/7445928b065ebb559207f9345b07d016/e3e67/image.png 510w,\\n/static/7445928b065ebb559207f9345b07d016/8d29c/image.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/7445928b065ebb559207f9345b07d016/2a009/image.webp 255w,\\n/static/7445928b065ebb559207f9345b07d016/42f59/image.webp 510w,\\n/static/7445928b065ebb559207f9345b07d016/f0920/image.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":500}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#383838","images":{"fallback":{"src":"/static/5dfba6aa010f9e14e1964bfb892128b3/852aa/4641-1.jpg","srcSet":"/static/5dfba6aa010f9e14e1964bfb892128b3/2963c/4641-1.jpg 95w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/cc4c5/4641-1.jpg 190w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/852aa/4641-1.jpg 380w","sizes":"(min-width: 380px) 380px, 100vw"},"sources":[{"srcSet":"/static/5dfba6aa010f9e14e1964bfb892128b3/97e84/4641-1.webp 95w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/4366b/4641-1.webp 190w,\\n/static/5dfba6aa010f9e14e1964bfb892128b3/3f812/4641-1.webp 380w","type":"image/webp","sizes":"(min-width: 380px) 380px, 100vw"}]},"width":380,"height":380}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/988613244.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3875462259.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3875462259.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/796930257.json":
 /*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/988613244.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/796930257.json ***!
   \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282858","images":{"fallback":{"src":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png","srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/4a28b/Screen-Shot-2023-02-04-at-7.22.27-PM.png 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/1d289/Screen-Shot-2023-02-04-at-7.22.27-PM.png 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png 852w","sizes":"(min-width: 852px) 852px, 100vw"},"sources":[{"srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/121f7/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/44bb4/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/fe61d/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 852w","type":"image/webp","sizes":"(min-width: 852px) 852px, 100vw"}]},"width":852,"height":458}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080818","images":{"fallback":{"src":"/static/98886cdb93495f7c8b8c194ff76e7689/e6180/hitlikeagirl-emilyberger.jpg","srcSet":"/static/98886cdb93495f7c8b8c194ff76e7689/fce97/hitlikeagirl-emilyberger.jpg 88w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/d6b18/hitlikeagirl-emilyberger.jpg 175w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/e6180/hitlikeagirl-emilyberger.jpg 350w","sizes":"(min-width: 350px) 350px, 100vw"},"sources":[{"srcSet":"/static/98886cdb93495f7c8b8c194ff76e7689/3c52c/hitlikeagirl-emilyberger.webp 88w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/745fa/hitlikeagirl-emilyberger.webp 175w,\\n/static/98886cdb93495f7c8b8c194ff76e7689/b0f73/hitlikeagirl-emilyberger.webp 350w","type":"image/webp","sizes":"(min-width: 350px) 350px, 100vw"}]},"width":350,"height":200}');
 
 /***/ }),
 

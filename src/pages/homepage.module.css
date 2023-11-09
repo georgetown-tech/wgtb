@@ -3,34 +3,12 @@
     text-align: left;
     list-style: none;
 }
-.slides ul{
-    list-style: none;
-    display: flex;
-}
-.slides li{
-    margin: 0;
-    padding: 0 10px;
-}
 .slideImage{
     max-width: 100px;
-    margin: 0;
-    padding: 0;
 }
-
-.slides h2{
-    display: block;
-    margin: 0;
-    padding: 0;
-    color:gray;
-    background-color: rgba(77, 77, 172, 0.656);
-    transform: translate(0, -100%);
-    max-height: 60px;
+.reviews{
+    width: 30%;
 }
-
-.slideDescription{
-    transform: translate(0, -100%);
-}
-
 .playlists{
     width: 25%;
 }

@@ -1,10 +1,10 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('/Users/sunilrosen/Documents/GitHub/wgtb/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'partytown',
-      plugin: require('/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/Users/sunilrosen/Documents/GitHub/wgtb/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */

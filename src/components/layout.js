@@ -10,18 +10,12 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div className={container}>
       <main>
         <Link to= "/homepage">
           <StaticImage src="../images/headerLogo.png" className={headerImage} alt="logo header"/>
         </Link>
-        
-        {children}
-      </main>
-      <nav>
-        <Navbar/>
-      </nav>
-      <div className={socialContainer}>
+        <div className={socialContainer}>
           <Link to= "https://www.facebook.com/georgetownradio">
             <StaticImage src= "../images/facebook.png" alt="Facebook"/>
           </Link>
@@ -35,6 +29,12 @@ const Layout = ({ pageTitle, children }) => {
             <StaticImage src= "../images/twitter.png" alt="X"/>
           </Link>
         </div>
+        <h1 className={heading}>{pageTitle}</h1>
+        {children}
+      </main>
+      <nav>
+        <Navbar/>
+      </nav>
     </div>
   )
 }

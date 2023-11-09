@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwgtb_site_beta=self.webpackChunkwgtb_site_beta||[]).push([[7],{5502:function(e,t,a){a.r(t),a.d(t,{Head:function(){return l}});var n=a(7294);const i={marginTop:0,marginBottom:64,maxWidth:320},l=()=>n.createElement("title",null,"Home Page");t.default=()=>n.createElement("h1",{style:i},"The Rotation")}}]);
-//# sourceMappingURL=component---src-pages-blog-js-33cb4d014ad7bc26c275.js.map
