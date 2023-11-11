@@ -24,7 +24,6 @@ exports.head = {
   "component---src-pages-contact-us-js": () => import("./../../../src/pages/contact-us.js?export=head" /* webpackChunkName: "component---src-pages-contact-us-jshead" */),
   "component---src-pages-dj-services-js": () => import("./../../../src/pages/dj-services.js?export=head" /* webpackChunkName: "component---src-pages-dj-services-jshead" */),
   "component---src-pages-homepage-js": () => import("./../../../src/pages/homepage.js?export=head" /* webpackChunkName: "component---src-pages-homepage-jshead" */),
-  "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=head" /* webpackChunkName: "component---src-pages-index-jshead" */),
-  "component---src-pages-schedule-js": () => import("./../../../src/pages/schedule.js?export=head" /* webpackChunkName: "component---src-pages-schedule-jshead" */)
+  "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=head" /* webpackChunkName: "component---src-pages-index-jshead" */)
 }
 

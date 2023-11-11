@@ -1,6 +1,6 @@
 import * as React from 'react'
-// import Navbar from '../../components/navbar/Navbar';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from "../components/navbar/Navbar.js"
+import ScheduleUploader from '../components/schedule_sheet.js'
 
 const pageStyles = {
     color: "#232129",
@@ -79,33 +79,18 @@ const pageStyles = {
     lineHeight: 1,
   }
 
-  // function App() {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Routes>
-//         <Route path='/' element={<Home />} />
-//         <Route path='/blog' element={<TheRotation />} />
-//         <Route path='/shows' element={<Shows />} />
-//         <Route path='/schedule' element={<Schedule />} />
-//         <Route path='/dj-services' element={<DjServices />} />
-//         <Route path='/contact-us' element={<ContactUs />} />
-//         <Route path='/about' element={<About />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
+
 
   const Header = () => {
-    return(
-        <h1 style = {headingStyles}>
-            Schedule
+    return (
+      <div>
+        <Navbar />
+        <h1 style={headingStyles}>
+          Schedule
         </h1>
-    )
-  }
-
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Home Page</title>
-
-// Step 3: Export your component
-export default Header
+        <ScheduleUploader />
+      </div>
+    );
+  };
+  
+  export default Header;
