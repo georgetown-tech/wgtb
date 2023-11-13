@@ -1,12 +1,13 @@
 import React from "react";
 import {Link} from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image'
 import "./slides.css"; 
 
 const Slides = () => {
   return(
     <ul>
     <li>
-        <Link className ={slideImage} to="http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25">
+        <Link class="slideImage" to="http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25">
         <StaticImage src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/image.png?resize=1020%2C500"
             alt="Janelle Monae"/>
             

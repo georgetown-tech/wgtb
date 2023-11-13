@@ -1533,7 +1533,7 @@ exports.components = {
   "component---src-pages-blog-js": () => __webpack_require__.e(/*! import() | component---src-pages-blog-js */ "component---src-pages-blog-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/blog.js?export=default */ "./src/pages/blog.js?export=default")),
   "component---src-pages-contact-us-js": () => __webpack_require__.e(/*! import() | component---src-pages-contact-us-js */ "component---src-pages-contact-us-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/contact-us.js?export=default */ "./src/pages/contact-us.js?export=default")),
   "component---src-pages-dj-services-js": () => __webpack_require__.e(/*! import() | component---src-pages-dj-services-js */ "component---src-pages-dj-services-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/dj-services.js?export=default */ "./src/pages/dj-services.js?export=default")),
-  "component---src-pages-homepage-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-js */ "component---src-pages-homepage-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage.js?export=default */ "./src/pages/homepage.js?export=default")),
+  "component---src-pages-homepage-slideshow-slides-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-slideshow-slides-js */ "component---src-pages-homepage-slideshow-slides-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage_slideshow/slides.js?export=default */ "./src/pages/homepage_slideshow/slides.js?export=default")),
   "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default")),
   "component---src-pages-schedule-js": () => __webpack_require__.e(/*! import() | component---src-pages-schedule-js */ "component---src-pages-schedule-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/schedule.js?export=default */ "./src/pages/schedule.js?export=default")),
   "component---src-pages-shows-bye-bye-miss-american-thighs-js": () => __webpack_require__.e(/*! import() | component---src-pages-shows-bye-bye-miss-american-thighs-js */ "component---src-pages-shows-bye-bye-miss-american-thighs-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/shows/bye-bye-miss-american-thighs.js?export=default */ "./src/pages/shows/bye-bye-miss-american-thighs.js?export=default")),
@@ -1549,7 +1549,6 @@ exports.head = {
   "component---src-pages-blog-js": () => __webpack_require__.e(/*! import() | component---src-pages-blog-jshead */ "component---src-pages-blog-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/blog.js?export=head */ "./src/pages/blog.js?export=head")),
   "component---src-pages-contact-us-js": () => __webpack_require__.e(/*! import() | component---src-pages-contact-us-jshead */ "component---src-pages-contact-us-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/contact-us.js?export=head */ "./src/pages/contact-us.js?export=head")),
   "component---src-pages-dj-services-js": () => __webpack_require__.e(/*! import() | component---src-pages-dj-services-jshead */ "component---src-pages-dj-services-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/dj-services.js?export=head */ "./src/pages/dj-services.js?export=head")),
-  "component---src-pages-homepage-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-jshead */ "component---src-pages-homepage-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage.js?export=head */ "./src/pages/homepage.js?export=head")),
   "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-jshead */ "component---src-pages-index-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=head */ "./src/pages/index.js?export=head")),
   "component---src-pages-schedule-js": () => __webpack_require__.e(/*! import() | component---src-pages-schedule-jshead */ "component---src-pages-schedule-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/schedule.js?export=head */ "./src/pages/schedule.js?export=head"))
 };
@@ -6422,24 +6421,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!***********************************************************************************************!*\
-  !*** external "/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react-dom/server.js" ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** external "/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react-dom/server.js" ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react-dom/server.js");
+module.exports = require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!******************************************************************************************!*\
-  !*** external "/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react/index.js" ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** external "/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react/index.js" ***!
+  \****************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react/index.js");
+module.exports = require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react/index.js");
 
 /***/ }),
 
