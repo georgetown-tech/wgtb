@@ -2804,42 +2804,48 @@ const Layout = ({
 }) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     class: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/homepage"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../../images/headerLogo.png",
     class: "headerImage",
-    alt: "logo header",
+    alt: "header image",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1455758500.json */ "./.cache/caches/gatsby-plugin-image/1455758500.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    class: "subheader"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    class: "page-title"
+  }, pageTitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     class: "socials"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://www.facebook.com/georgetownradio"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "../images/facebook.png",
+    src: "../../images/facebook.png",
     alt: "Facebook",
-    __error: "No data found for image \"../images/facebook.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/4077625624.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+    class: "image",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2930038459.json */ "./.cache/caches/gatsby-plugin-image/2930038459.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://www.instagram.com/georgetownradio/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "../images/instagram.png",
+    src: "../../images/insta-logo.png",
     alt: "Instagram",
-    __error: "No data found for image \"../images/instagram.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/914201252.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+    class: "image",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1869826869.json */ "./.cache/caches/gatsby-plugin-image/1869826869.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://soundcloud.com/wgtb-rotation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "../images/soundcloud.png",
+    src: "../../images/soundcloud.png",
     alt: "Soundcloud",
-    __error: "No data found for image \"../images/soundcloud.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/3595824580.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+    class: "image-soundcloud",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1463195017.json */ "./.cache/caches/gatsby-plugin-image/1463195017.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://twitter.com/wgtb"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "../images/twitter.png",
+    src: "../../images/twitter.png",
     alt: "X",
-    __error: "No data found for image \"../images/twitter.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/3463243411.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    class: "page-title"
-  }, pageTitle), children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+    class: "image",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/760360157.json */ "./.cache/caches/gatsby-plugin-image/760360157.json")
+  })))), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
 
@@ -2870,7 +2876,7 @@ const Navbar = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "navbar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/homepage"
+    to: "/"
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/blog"
   }, "The Rotation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
@@ -4609,6 +4615,50 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/1463195017.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1463195017.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/4167d654c7639b10a6b41c25adce56aa/6f850/soundcloud.png","srcSet":"/static/4167d654c7639b10a6b41c25adce56aa/9ae00/soundcloud.png 100w,\\n/static/4167d654c7639b10a6b41c25adce56aa/6ddfe/soundcloud.png 200w,\\n/static/4167d654c7639b10a6b41c25adce56aa/6f850/soundcloud.png 400w","sizes":"(min-width: 400px) 400px, 100vw"},"sources":[{"srcSet":"/static/4167d654c7639b10a6b41c25adce56aa/df6d5/soundcloud.webp 100w,\\n/static/4167d654c7639b10a6b41c25adce56aa/70f31/soundcloud.webp 200w,\\n/static/4167d654c7639b10a6b41c25adce56aa/f5d2e/soundcloud.webp 400w","type":"image/webp","sizes":"(min-width: 400px) 400px, 100vw"}]},"width":400,"height":244}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/1869826869.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/1869826869.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/4e2f25f3491ae33a09990b94b3148aea/30cdc/insta-logo.png","srcSet":"/static/4e2f25f3491ae33a09990b94b3148aea/7458e/insta-logo.png 75w,\\n/static/4e2f25f3491ae33a09990b94b3148aea/de3a1/insta-logo.png 150w,\\n/static/4e2f25f3491ae33a09990b94b3148aea/30cdc/insta-logo.png 300w","sizes":"(min-width: 300px) 300px, 100vw"},"sources":[{"srcSet":"/static/4e2f25f3491ae33a09990b94b3148aea/18188/insta-logo.webp 75w,\\n/static/4e2f25f3491ae33a09990b94b3148aea/c65bc/insta-logo.webp 150w,\\n/static/4e2f25f3491ae33a09990b94b3148aea/078c3/insta-logo.webp 300w","type":"image/webp","sizes":"(min-width: 300px) 300px, 100vw"}]},"width":300,"height":300}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/2930038459.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/2930038459.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/4258db2aad3184fee0231212306c3d5a/ccc41/facebook.png","srcSet":"/static/4258db2aad3184fee0231212306c3d5a/bf8e1/facebook.png 128w,\\n/static/4258db2aad3184fee0231212306c3d5a/acb7c/facebook.png 256w,\\n/static/4258db2aad3184fee0231212306c3d5a/ccc41/facebook.png 512w","sizes":"(min-width: 512px) 512px, 100vw"},"sources":[{"srcSet":"/static/4258db2aad3184fee0231212306c3d5a/6766a/facebook.webp 128w,\\n/static/4258db2aad3184fee0231212306c3d5a/22bfc/facebook.webp 256w,\\n/static/4258db2aad3184fee0231212306c3d5a/d689f/facebook.webp 512w","type":"image/webp","sizes":"(min-width: 512px) 512px, 100vw"}]},"width":512,"height":512}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/760360157.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/760360157.json ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/fb1ef4133ab857393c29a4db251379d1/78e61/twitter.png","srcSet":"/static/fb1ef4133ab857393c29a4db251379d1/7237d/twitter.png 600w,\\n/static/fb1ef4133ab857393c29a4db251379d1/02c57/twitter.png 1200w,\\n/static/fb1ef4133ab857393c29a4db251379d1/78e61/twitter.png 2400w","sizes":"(min-width: 2400px) 2400px, 100vw"},"sources":[{"srcSet":"/static/fb1ef4133ab857393c29a4db251379d1/63168/twitter.webp 600w,\\n/static/fb1ef4133ab857393c29a4db251379d1/13b13/twitter.webp 1200w,\\n/static/fb1ef4133ab857393c29a4db251379d1/b4361/twitter.webp 2400w","type":"image/webp","sizes":"(min-width: 2400px) 2400px, 100vw"}]},"width":2400,"height":2453}');
 
 /***/ }),
 
