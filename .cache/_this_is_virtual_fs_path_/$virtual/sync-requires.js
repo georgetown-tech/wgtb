@@ -10,7 +10,7 @@ exports.components = {
   "component---src-pages-blog-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/blog.js")),
   "component---src-pages-contact-us-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/contact-us.js")),
   "component---src-pages-dj-services-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/dj-services.js")),
-  "component---src-pages-homepage-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/homepage.js")),
+  "component---src-pages-homepage-slideshow-slides-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/homepage_slideshow/slides.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/index.js")),
   "component---src-pages-schedule-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/schedule.js")),
   "component---src-pages-shows-bye-bye-miss-american-thighs-js": preferDefault(require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/shows/bye-bye-miss-american-thighs.js")),

@@ -126,29 +126,6 @@ module.exports["default"] = camelCase;
 
 /***/ }),
 
-/***/ "./src/components/layout.module.css":
-/*!******************************************!*\
-  !*** ./src/components/layout.module.css ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   container: () => (/* binding */ container),
-/* harmony export */   headerImage: () => (/* binding */ headerImage),
-/* harmony export */   heading: () => (/* binding */ heading),
-/* harmony export */   socialContainer: () => (/* binding */ socialContainer)
-/* harmony export */ });
-// Exports
-var container = "layout-module--container--78b04";
-var heading = "layout-module--heading--f158c";
-var headerImage = "layout-module--headerImage--187f7";
-var socialContainer = "layout-module--socialContainer--26e60";
-
-
-/***/ }),
-
 /***/ "./src/pages/homepage.module.css":
 /*!***************************************!*\
   !*** ./src/pages/homepage.module.css ***!
@@ -160,12 +137,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   playlists: () => (/* binding */ playlists),
 /* harmony export */   reviews: () => (/* binding */ reviews),
-/* harmony export */   slideImage: () => (/* binding */ slideImage),
 /* harmony export */   slides: () => (/* binding */ slides)
 /* harmony export */ });
 // Exports
 var slides = "homepage-module--slides--efec3";
-var slideImage = "homepage-module--slideImage--bd927";
 var reviews = "homepage-module--reviews--f4f41";
 var playlists = "homepage-module--playlists--d0412";
 
@@ -2821,9 +2796,9 @@ Z.displayName = "StaticImage", Z.propTypes = Q;
 
 /***/ }),
 
-/***/ "./src/components/layout.js":
+/***/ "./src/components/footer.js":
 /*!**********************************!*\
-  !*** ./src/components/layout.js ***!
+  !*** ./src/components/footer.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2834,9 +2809,120 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar/Navbar */ "./src/components/navbar/Navbar.js");
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _layout_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layout.module.css */ "./src/components/layout.module.css");
+
+const Footer = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "cb-footer-inner",
+    class: "clearfix"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "cb-footer-widget clearfix first"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "linkcat-2",
+    class: "widget_links"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    class: "cb-footer-widget-title"
+  }, "Blogroll"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    class: "xoxo blogroll"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.gorillavsbear.net/"
+  }, "Gorilla vs. Bear")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://georgetownvoice.com/section/halftime/"
+  }, "Halftime")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.npr.org/"
+  }, "NPR")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.obscuresound.com/"
+  }, "Obscure Sound")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://pitchfork.com"
+  }, "Pitchfork")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.qoremusicco.com/"
+  }, "Qore Music Co.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.thevinyldistrict.com"
+  }, "The Vinyl District"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "cb-footer-widget clearfix"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "linkcat-4",
+    class: "widget_links"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    class: "cb-footer-widget-title"
+  }, "DC Music Venues"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    class: "xoxo blogroll"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.930.com/"
+  }, "9:30 Club")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.blackcatdc.com/"
+  }, "Black Cat")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.dar.org/conthall/"
+  }, "DAR Constitutional Hall")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.dcnine.com/"
+  }, "DC9")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://jamminjava.com/"
+  }, "Jammin' Java")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.thejiffylubelive.com/"
+  }, "Jiffy Lube")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.kennedy-center.org/"
+  }, "Kennedy Center")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.merriweathermusic.com/"
+  }, "Merriweather Post Pavillion")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.ramsheadlive.com/"
+  }, "Rams Head Live")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.rockandrollhoteldc.com/portal/"
+  }, "Rock & Roll Hotel")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://www.redandblackbar.com/",
+    rel: "noopener",
+    target: "_blank"
+  }, "The Red and the Black"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "cb-footer-widget clearfix"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "custom_html-5",
+    class: "widget_text widget_custom_html"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    class: "cb-footer-widget-title"
+  }, "Our Location"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "textwidget custom-html-widget"
+  }, "432 Leavey Center Georgetown University Washington, DC 20057 studio phone: 202.687.WGTB /* Site Meter */", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", {
+    type: "text/javascript",
+    src: "http://sm7.sitemeter.com/js/counter.js?site=sm7frankzappa"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://sm7.sitemeter.com/stats.asp?site=sm7frankzappa",
+    target: "_top",
+    rel: "noopener"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "http://sm7.sitemeter.com/meter.asp?site=sm7frankzappa",
+    alt: "Site Meter",
+    border: "0"
+  }))), "/* Copyright (c)2009 Site Meter */"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "cb-footer-widget clearfix"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "text-17",
+    class: "widget_text"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "textwidget"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/themes/Ciola-child/img/footer-logo.png?w=600",
+    "data-recalc-dims": "1"
+  })))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/header/layout.js":
+/*!*****************************************!*\
+  !*** ./src/components/header/layout.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../navbar/Navbar */ "./src/components/navbar/Navbar.js");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout.css */ "./src/components/header/layout.css");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_layout_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
 
 
@@ -2848,42 +2934,42 @@ const Layout = ({
   children
 }) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.container
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    class: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/homepage"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "../images/headerLogo.png",
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.headerImage,
+    src: "../../images/headerLogo.png",
+    class: "headerImage",
     alt: "logo header",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2382332205.json */ "./.cache/caches/gatsby-plugin-image/2382332205.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1455758500.json */ "./.cache/caches/gatsby-plugin-image/1455758500.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.socialContainer
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    class: "socials"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://www.facebook.com/georgetownradio"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/facebook.png",
     alt: "Facebook",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1404812705.json */ "./.cache/caches/gatsby-plugin-image/1404812705.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    __error: "No data found for image \"../images/facebook.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/4077625624.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://www.instagram.com/georgetownradio/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/instagram.png",
     alt: "Instagram",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3661714007.json */ "./.cache/caches/gatsby-plugin-image/3661714007.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    __error: "No data found for image \"../images/instagram.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/914201252.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://soundcloud.com/wgtb-rotation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/soundcloud.png",
     alt: "Soundcloud",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3063781259.json */ "./.cache/caches/gatsby-plugin-image/3063781259.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    __error: "No data found for image \"../images/soundcloud.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/3595824580.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://twitter.com/wgtb"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../images/twitter.png",
     alt: "X",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/887097126.json */ "./.cache/caches/gatsby-plugin-image/887097126.json")
+    __error: "No data found for image \"../images/twitter.png\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/3463243411.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/components/header/layout.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    className: _layout_module_css__WEBPACK_IMPORTED_MODULE_3__.heading
+    class: "page-title"
   }, pageTitle), children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
@@ -2948,77 +3034,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _homepage_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homepage.module.css */ "./src/pages/homepage.module.css");
+/* harmony import */ var _components_header_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/header/layout */ "./src/components/header/layout.js");
+/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/footer.js */ "./src/components/footer.js");
+/* harmony import */ var _homepage_slideshow_slides__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homepage_slideshow/slides */ "./src/pages/homepage_slideshow/slides.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./homepage.module.css */ "./src/pages/homepage.module.css");
 
 //import Navbar from "../components/navbar/Navbar"
 
 
 
 
+
+
 const Homepage = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_header_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: "Georgetown Radio"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.slides
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.slideImage,
-    to: "http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/image.png?resize=1020%2C500",
-    alt: "Janelle Monae",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1232022899.json */ "./.cache/caches/gatsby-plugin-image/1232022899.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
-  }, "Preview: Janelle Mon\xE1e @ the Anthem 9/24 & 9/25")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Janelle Mon\xE1e brings the Age of Pleasure tour to DC for two consecutive nights at the Anthem,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "http://georgetownradio.com/preview-l7-tarah-who-the-black-cat-9-18"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/l7-1-1200x675-1.jpg?resize=1020%2C500",
-    alt: "L7",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3113782235.json */ "./.cache/caches/gatsby-plugin-image/3113782235.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    class: "h3"
-  }, "Preview: L7 & Tarah Who? @ The Black Cat, 9/18"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Though often associated with the early 90s grunge and riot grrrl explosion, LA-based band, L7,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "http://georgetownradio.com/the-dc-hold-on-cab-ellis-with-gooseberry-and-alex-alavi-the-funky-breakfast-the-pocket"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/cab-ellis.jpeg?resize=400%2C200",
-    alt: "Cab Ellis",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/400957869.json */ "./.cache/caches/gatsby-plugin-image/400957869.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    class: "h3"
-  }, "The DC Hold On: Cab Ellis with Gooseberry and Alex Alavi & the Funky Breakfast @ The Pocket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Ask the average American how they picture the lives of young adults in the District of Columbia,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "http://georgetownradio.com/jockstrap-makes-dc9-their-own"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
-    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/Screen-Shot-2023-02-04-at-7.22.27-PM.png?resize=852%2C458",
-    alt: "Jockstrap",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2358036912.json */ "./.cache/caches/gatsby-plugin-image/2358036912.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    class: "h3"
-  }, "Jockstrap Makes DC9 Their Own"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "British duo Jockstrap kicked off their first ever North American tour at DC9 on November 17th. The...")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.reviews
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Single Review"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+    classname: _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__.slides
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_homepage_slideshow_slides__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__.reviews
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Single Review"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_4__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2021/03/hitlikeagirl-emilyberger.jpg?resize=350%2C200",
     alt: "",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2872315402.json */ "./.cache/caches/gatsby-plugin-image/2872315402.json")
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Hit Like A Girl\u2019s Newest Single \u201CMonsters\u201D is an Anthem for the Forgotten"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Hit Like A Girl\u2019s newest single, \u201CMonsters\u201D, came out on March 16, 2021. \"Monsters\" is the second single shared from their third album, Heart Racer, which will be released on April 2nd through...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Album Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Hit Like A Girl\u2019s Newest Single \u201CMonsters\u201D is an Anthem for the Forgotten"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Hit Like A Girl\u2019s newest single, \u201CMonsters\u201D, came out on March 16, 2021. \"Monsters\" is the second single shared from their third album, Heart Racer, which will be released on April 2nd through...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Album Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_4__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__.StaticImage, {
     __error: "No data found for image \"undefined\"\n              undefinedCould not read image data file \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/.cache/caches/gatsby-plugin-image/3184126905.json\". \nThis may mean that the images in \"/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/src/pages/homepage.js\" were not processed.\nPlease ensure that your gatsby version is at least 2.24.78."
   }, "src=\"https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/01/og_image.jpg?resize=350%2C200\" alt=\"\""))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_3__.playlists
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Playlists"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+    className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__.playlists
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Playlists"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_4__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/09/fiona-apples-and-oranges.png?resize=380%2C380",
     alt: "",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3942884869.json */ "./.cache/caches/gatsby-plugin-image/3942884869.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "FA&O: Fall Rotation Recommendations"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "FA&O: Fall Rotation Recommendations"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_4__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-2.55.23-PM.png?resize=380%2C380",
     alt: "",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2074084675.json */ "./.cache/caches/gatsby-plugin-image/2074084675.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Preview + Playlist: MICHELLE and Sidney Gish @ BDA"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Preview + Playlist: MICHELLE and Sidney Gish @ BDA"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_4__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/01/4641-1.jpeg?resize=380%2C380",
     alt: "",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3012262087.json */ "./.cache/caches/gatsby-plugin-image/3012262087.json")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Playlist: Honeymoon in Paris"))))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Playlist: Honeymoon in Paris"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_footer_js__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 
 // You'll learn about this in the next task, just copy it for now
@@ -3026,6 +3083,67 @@ const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 // Step 3: Export your components
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Homepage);
+
+/***/ }),
+
+/***/ "./src/pages/homepage_slideshow/slides.js":
+/*!************************************************!*\
+  !*** ./src/pages/homepage_slideshow/slides.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _slides_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides.css */ "./src/pages/homepage_slideshow/slides.css");
+/* harmony import */ var _slides_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_slides_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Slides = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    class: "slideImage",
+    to: "http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/image.png?resize=1020%2C500",
+    alt: "Janelle Monae",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2554609759.json */ "./.cache/caches/gatsby-plugin-image/2554609759.json")
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
+  }, "Preview: Janelle Mon\xE1e @ the Anthem 9/24 & 9/25")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Janelle Mon\xE1e brings the Age of Pleasure tour to DC for two consecutive nights at the Anthem,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "http://georgetownradio.com/preview-l7-tarah-who-the-black-cat-9-18"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/l7-1-1200x675-1.jpg?resize=1020%2C500",
+    alt: "L7",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3597784691.json */ "./.cache/caches/gatsby-plugin-image/3597784691.json")
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    class: "h3"
+  }, "Preview: L7 & Tarah Who? @ The Black Cat, 9/18"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Though often associated with the early 90s grunge and riot grrrl explosion, LA-based band, L7,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "http://georgetownradio.com/the-dc-hold-on-cab-ellis-with-gooseberry-and-alex-alavi-the-funky-breakfast-the-pocket"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/cab-ellis.jpeg?resize=400%2C200",
+    alt: "Cab Ellis",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1351054289.json */ "./.cache/caches/gatsby-plugin-image/1351054289.json")
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    class: "h3"
+  }, "The DC Hold On: Cab Ellis with Gooseberry and Alex Alavi & the Funky Breakfast @ The Pocket"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Ask the average American how they picture the lives of young adults in the District of Columbia,...")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "http://georgetownradio.com/jockstrap-makes-dc9-their-own"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
+    src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/Screen-Shot-2023-02-04-at-7.22.27-PM.png?resize=852%2C458",
+    alt: "Jockstrap",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3624844725.json */ "./.cache/caches/gatsby-plugin-image/3624844725.json")
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    class: "h3"
+  }, "Jockstrap Makes DC9 Their Own"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "British duo Jockstrap kicked off their first ever North American tour at DC9 on November 17th. The...")));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slides);
 
 /***/ }),
 
@@ -3867,10 +3985,30 @@ function instanceOfHashable(object) {
 
 /***/ }),
 
+/***/ "./src/components/header/layout.css":
+/*!******************************************!*\
+  !*** ./src/components/header/layout.css ***!
+  \******************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./src/components/navbar/navbar.css":
 /*!******************************************!*\
   !*** ./src/components/navbar/navbar.css ***!
   \******************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/pages/homepage_slideshow/slides.css":
+/*!*************************************************!*\
+  !*** ./src/pages/homepage_slideshow/slides.css ***!
+  \*************************************************/
 /***/ (() => {
 
 
@@ -4645,25 +4783,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1232022899.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1351054289.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1232022899.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1351054289.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#181818","images":{"fallback":{"src":"/static/7445928b065ebb559207f9345b07d016/8d29c/image.png","srcSet":"/static/7445928b065ebb559207f9345b07d016/e95b1/image.png 255w,\\n/static/7445928b065ebb559207f9345b07d016/e3e67/image.png 510w,\\n/static/7445928b065ebb559207f9345b07d016/8d29c/image.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/7445928b065ebb559207f9345b07d016/2a009/image.webp 255w,\\n/static/7445928b065ebb559207f9345b07d016/42f59/image.webp 510w,\\n/static/7445928b065ebb559207f9345b07d016/f0920/image.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":500}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282828","images":{"fallback":{"src":"/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg","srcSet":"/static/533e82e171fce365cfb267168c67cc3a/c8ee8/cab-ellis.jpg 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/ca582/cab-ellis.jpg 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg 400w","sizes":"(min-width: 400px) 400px, 100vw"},"sources":[{"srcSet":"/static/533e82e171fce365cfb267168c67cc3a/fd9c7/cab-ellis.webp 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/f201f/cab-ellis.webp 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/e8709/cab-ellis.webp 400w","type":"image/webp","sizes":"(min-width: 400px) 400px, 100vw"}]},"width":400,"height":200}');
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1404812705.json":
+/***/ "./.cache/caches/gatsby-plugin-image/1455758500.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1404812705.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/1455758500.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#385898","images":{"fallback":{"src":"/static/de7f99bbbca33cdda4e72b0cd9cb3225/b4b01/facebook.png","srcSet":"/static/de7f99bbbca33cdda4e72b0cd9cb3225/255ab/facebook.png 14w,\\n/static/de7f99bbbca33cdda4e72b0cd9cb3225/aa0e3/facebook.png 29w,\\n/static/de7f99bbbca33cdda4e72b0cd9cb3225/b4b01/facebook.png 57w","sizes":"(min-width: 57px) 57px, 100vw"},"sources":[{"srcSet":"/static/de7f99bbbca33cdda4e72b0cd9cb3225/6412b/facebook.webp 14w,\\n/static/de7f99bbbca33cdda4e72b0cd9cb3225/4c897/facebook.webp 29w,\\n/static/de7f99bbbca33cdda4e72b0cd9cb3225/e8582/facebook.webp 57w","type":"image/webp","sizes":"(min-width: 57px) 57px, 100vw"}]},"width":57,"height":57}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
 
 /***/ }),
 
@@ -4678,25 +4816,14 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2358036912.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2554609759.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2358036912.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2554609759.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282858","images":{"fallback":{"src":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png","srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/4a28b/Screen-Shot-2023-02-04-at-7.22.27-PM.png 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/1d289/Screen-Shot-2023-02-04-at-7.22.27-PM.png 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png 852w","sizes":"(min-width: 852px) 852px, 100vw"},"sources":[{"srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/121f7/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/44bb4/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/fe61d/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 852w","type":"image/webp","sizes":"(min-width: 852px) 852px, 100vw"}]},"width":852,"height":458}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/2382332205.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2382332205.json ***!
-  \***********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#181818","images":{"fallback":{"src":"/static/7445928b065ebb559207f9345b07d016/8d29c/image.png","srcSet":"/static/7445928b065ebb559207f9345b07d016/e95b1/image.png 255w,\\n/static/7445928b065ebb559207f9345b07d016/e3e67/image.png 510w,\\n/static/7445928b065ebb559207f9345b07d016/8d29c/image.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/7445928b065ebb559207f9345b07d016/2a009/image.webp 255w,\\n/static/7445928b065ebb559207f9345b07d016/42f59/image.webp 510w,\\n/static/7445928b065ebb559207f9345b07d016/f0920/image.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":500}');
 
 /***/ }),
 
@@ -4722,20 +4849,9 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#383838"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3063781259.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3597784691.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3063781259.json ***!
-  \***********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f85808","images":{"fallback":{"src":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/b4b01/soundcloud.png","srcSet":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/255ab/soundcloud.png 14w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/aa0e3/soundcloud.png 29w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/b4b01/soundcloud.png 57w","sizes":"(min-width: 57px) 57px, 100vw"},"sources":[{"srcSet":"/static/10d3ad5ba24455b9a77cb0ad5321fa5c/6412b/soundcloud.webp 14w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/4c897/soundcloud.webp 29w,\\n/static/10d3ad5ba24455b9a77cb0ad5321fa5c/e8582/soundcloud.webp 57w","type":"image/webp","sizes":"(min-width: 57px) 57px, 100vw"}]},"width":57,"height":57}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/3113782235.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3113782235.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/3597784691.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4744,14 +4860,14 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#081808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/3661714007.json":
+/***/ "./.cache/caches/gatsby-plugin-image/3624844725.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/3661714007.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/3624844725.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#c89868","images":{"fallback":{"src":"/static/2570bc092095fac20cd4ccf8a930097c/b4b01/instagram.png","srcSet":"/static/2570bc092095fac20cd4ccf8a930097c/255ab/instagram.png 14w,\\n/static/2570bc092095fac20cd4ccf8a930097c/aa0e3/instagram.png 29w,\\n/static/2570bc092095fac20cd4ccf8a930097c/b4b01/instagram.png 57w","sizes":"(min-width: 57px) 57px, 100vw"},"sources":[{"srcSet":"/static/2570bc092095fac20cd4ccf8a930097c/6412b/instagram.webp 14w,\\n/static/2570bc092095fac20cd4ccf8a930097c/4c897/instagram.webp 29w,\\n/static/2570bc092095fac20cd4ccf8a930097c/e8582/instagram.webp 57w","type":"image/webp","sizes":"(min-width: 57px) 57px, 100vw"}]},"width":57,"height":57}');
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282858","images":{"fallback":{"src":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png","srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/4a28b/Screen-Shot-2023-02-04-at-7.22.27-PM.png 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/1d289/Screen-Shot-2023-02-04-at-7.22.27-PM.png 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/2b516/Screen-Shot-2023-02-04-at-7.22.27-PM.png 852w","sizes":"(min-width: 852px) 852px, 100vw"},"sources":[{"srcSet":"/static/ad6cbe8b6f65888c0e1a58f36c68204d/121f7/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 213w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/44bb4/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 426w,\\n/static/ad6cbe8b6f65888c0e1a58f36c68204d/fe61d/Screen-Shot-2023-02-04-at-7.22.27-PM.webp 852w","type":"image/webp","sizes":"(min-width: 852px) 852px, 100vw"}]},"width":852,"height":458}');
 
 /***/ }),
 
@@ -4763,28 +4879,6 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#c89868"
 
 "use strict";
 module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808","images":{"fallback":{"src":"/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/6cc22/fiona-apples-and-oranges.png","srcSet":"/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/a14e0/fiona-apples-and-oranges.png 95w,\\n/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/a9207/fiona-apples-and-oranges.png 190w,\\n/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/6cc22/fiona-apples-and-oranges.png 380w","sizes":"(min-width: 380px) 380px, 100vw"},"sources":[{"srcSet":"/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/97e84/fiona-apples-and-oranges.webp 95w,\\n/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/4366b/fiona-apples-and-oranges.webp 190w,\\n/static/e4fa7c0b8af4d1fc0595b3f34a550ec1/3f812/fiona-apples-and-oranges.webp 380w","type":"image/webp","sizes":"(min-width: 380px) 380px, 100vw"}]},"width":380,"height":380}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/400957869.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/400957869.json ***!
-  \**********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#282828","images":{"fallback":{"src":"/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg","srcSet":"/static/533e82e171fce365cfb267168c67cc3a/c8ee8/cab-ellis.jpg 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/ca582/cab-ellis.jpg 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/6b019/cab-ellis.jpg 400w","sizes":"(min-width: 400px) 400px, 100vw"},"sources":[{"srcSet":"/static/533e82e171fce365cfb267168c67cc3a/fd9c7/cab-ellis.webp 100w,\\n/static/533e82e171fce365cfb267168c67cc3a/f201f/cab-ellis.webp 200w,\\n/static/533e82e171fce365cfb267168c67cc3a/e8709/cab-ellis.webp 400w","type":"image/webp","sizes":"(min-width: 400px) 400px, 100vw"}]},"width":400,"height":200}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/887097126.json":
-/*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/887097126.json ***!
-  \**********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#08a8e8","images":{"fallback":{"src":"/static/36491f59d8bc9a15276513c4e8e73f0f/b4b01/twitter.png","srcSet":"/static/36491f59d8bc9a15276513c4e8e73f0f/255ab/twitter.png 14w,\\n/static/36491f59d8bc9a15276513c4e8e73f0f/aa0e3/twitter.png 29w,\\n/static/36491f59d8bc9a15276513c4e8e73f0f/b4b01/twitter.png 57w","sizes":"(min-width: 57px) 57px, 100vw"},"sources":[{"srcSet":"/static/36491f59d8bc9a15276513c4e8e73f0f/6412b/twitter.webp 14w,\\n/static/36491f59d8bc9a15276513c4e8e73f0f/4c897/twitter.webp 29w,\\n/static/36491f59d8bc9a15276513c4e8e73f0f/e8582/twitter.webp 57w","type":"image/webp","sizes":"(min-width: 57px) 57px, 100vw"}]},"width":57,"height":57}');
 
 /***/ }),
 
