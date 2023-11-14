@@ -5,7 +5,7 @@ exports.components = {
   "component---src-pages-blog-js": () => import("./../../../src/pages/blog.js?export=default" /* webpackChunkName: "component---src-pages-blog-js" */),
   "component---src-pages-contact-us-js": () => import("./../../../src/pages/contact-us.js?export=default" /* webpackChunkName: "component---src-pages-contact-us-js" */),
   "component---src-pages-dj-services-js": () => import("./../../../src/pages/dj-services.js?export=default" /* webpackChunkName: "component---src-pages-dj-services-js" */),
-  "component---src-pages-homepage-slideshow-slides-js": () => import("./../../../src/pages/homepage_slideshow/slides.js?export=default" /* webpackChunkName: "component---src-pages-homepage-slideshow-slides-js" */),
+  "component---src-pages-homepage-slideshow-image-slider-js": () => import("./../../../src/pages/homepage_slideshow/ImageSlider.js?export=default" /* webpackChunkName: "component---src-pages-homepage-slideshow-image-slider-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=default" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-schedule-js": () => import("./../../../src/pages/schedule.js?export=default" /* webpackChunkName: "component---src-pages-schedule-js" */),
   "component---src-pages-shows-bye-bye-miss-american-thighs-js": () => import("./../../../src/pages/shows/bye-bye-miss-american-thighs.js?export=default" /* webpackChunkName: "component---src-pages-shows-bye-bye-miss-american-thighs-js" */),

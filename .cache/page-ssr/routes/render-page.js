@@ -1533,6 +1533,7 @@ exports.components = {
   "component---src-pages-blog-js": () => __webpack_require__.e(/*! import() | component---src-pages-blog-js */ "component---src-pages-blog-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/blog.js?export=default */ "./src/pages/blog.js?export=default")),
   "component---src-pages-contact-us-js": () => __webpack_require__.e(/*! import() | component---src-pages-contact-us-js */ "component---src-pages-contact-us-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/contact-us.js?export=default */ "./src/pages/contact-us.js?export=default")),
   "component---src-pages-dj-services-js": () => __webpack_require__.e(/*! import() | component---src-pages-dj-services-js */ "component---src-pages-dj-services-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/dj-services.js?export=default */ "./src/pages/dj-services.js?export=default")),
+  "component---src-pages-homepage-slideshow-slider-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-slideshow-slider-js */ "component---src-pages-homepage-slideshow-slider-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage_slideshow/slider.js?export=default */ "./src/pages/homepage_slideshow/slider.js?export=default")),
   "component---src-pages-homepage-slideshow-slides-js": () => __webpack_require__.e(/*! import() | component---src-pages-homepage-slideshow-slides-js */ "component---src-pages-homepage-slideshow-slides-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/homepage_slideshow/slides.js?export=default */ "./src/pages/homepage_slideshow/slides.js?export=default")),
   "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default")),
   "component---src-pages-schedule-js": () => __webpack_require__.e(/*! import() | component---src-pages-schedule-js */ "component---src-pages-schedule-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/schedule.js?export=default */ "./src/pages/schedule.js?export=default")),
@@ -6421,24 +6422,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*********************************************************************************************!*\
-  !*** external "/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react-dom/server.js" ***!
-  \*********************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** external "/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react-dom/server.js" ***!
+  \***********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react-dom/server.js");
+module.exports = require("/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!****************************************************************************************!*\
-  !*** external "/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react/index.js" ***!
-  \****************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** external "/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react/index.js" ***!
+  \******************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/kjpalmer24/GDT/wgtb-site-beta/wgtb/node_modules/react/index.js");
+module.exports = require("/Users/gaiagoulandris/Documents/GitHub/wgtb/node_modules/react/index.js");
 
 /***/ }),
 
