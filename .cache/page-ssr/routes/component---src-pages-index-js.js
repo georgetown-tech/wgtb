@@ -136,11 +136,9 @@ module.exports["default"] = camelCase;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   playlists: () => (/* binding */ playlists),
-/* harmony export */   reviews: () => (/* binding */ reviews),
-/* harmony export */   slides: () => (/* binding */ slides)
+/* harmony export */   reviews: () => (/* binding */ reviews)
 /* harmony export */ });
 // Exports
-var slides = "homepage-module--slides--efec3";
 var reviews = "homepage-module--reviews--f4f41";
 var playlists = "homepage-module--playlists--d0412";
 
@@ -3026,10 +3024,10 @@ const Navbar = () => {
 
 /***/ }),
 
-/***/ "./src/pages/homepage_slideshow/Slider.js":
-/*!************************************************!*\
-  !*** ./src/pages/homepage_slideshow/Slider.js ***!
-  \************************************************/
+/***/ "./src/pages/homepage_slideshow/ImageSlider.js":
+/*!*****************************************************!*\
+  !*** ./src/pages/homepage_slideshow/ImageSlider.js ***!
+  \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3039,144 +3037,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _slider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider.css */ "./src/pages/homepage_slideshow/slider.css");
-/* harmony import */ var _slider_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_slider_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ImageSlider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ImageSlider.css */ "./src/pages/homepage_slideshow/ImageSlider.css");
+/* harmony import */ var _ImageSlider_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ImageSlider_css__WEBPACK_IMPORTED_MODULE_1__);
+// ImageSlider.js
 
- // Make sure to create a CSS file for styling
+ // Make sure to create an ImageSlider.css file for styling
 
-const Slider = ({
+const ImageSlider = ({
   slides
 }) => {
   const {
-    0: currentIndex,
+    0: current,
     1: setCurrentIndex
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
+  const length = slides.length;
+  const nextSlide = () => {
+    setCurrentIndex(current === length - 1 ? 0 : current + 1);
   };
-  const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+  const prevSlide = () => {
+    setCurrentIndex(current === 0 ? length - 1 : current - 1);
   };
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null; // If there are no slides, don't render the component
+  }
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "slider"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: goToPrevious
-  }, "Previous"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "slide-container"
-  }, slides.map((slide, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    key: index,
-    className: `slide ${index === currentIndex ? 'active' : ''}`
-  }, slide))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: goToNext
-  }, "Next"));
+    className: "left-arrow",
+    onClick: prevSlide
+  }, "<"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "right-arrow",
+    onClick: nextSlide
+  }, ">"), slides.map((slide, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: index === current ? 'slide active' : 'slide',
+    key: index
+  }, index === current && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: slide.link,
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: slide.imageSrc,
+    alt: slide.title,
+    className: "image"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "slide-caption"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, slide.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, slide.description))))));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slider);
-
-/***/ }),
-
-/***/ "./src/pages/homepage_slideshow/slides.js":
-/*!************************************************!*\
-  !*** ./src/pages/homepage_slideshow/slides.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider */ "./src/pages/homepage_slideshow/Slider.js");
-
- // Import the Slider component
-
-const slidesData = ['Slide Content 1', 'Slide Content 2', 'Slide Content 3'
-// ...add more slide content here
-];
-
-const Slides = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Slider__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    slides: slidesData
-  });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slides);
-
-/*import React from "react";
-import {Link} from "gatsby";
-import { StaticImage } from 'gatsby-plugin-image'
-import "./slides.css"; 
-
-const Slides = () => {
-  return(
-    <ul>
-    <li>
-        <Link class="slideImage" to="http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25">
-        <StaticImage src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/image.png?resize=1020%2C500"
-            alt="Janelle Monae"/>
-            
-        </Link>
-        <h2>
-        <a
-            href="http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25"
-            >Preview: Janelle Monáe @ the Anthem 9/24 &#038; 9/25</a>
-        </h2>
-        <div>
-        Janelle Monáe brings the Age of Pleasure tour to DC for two
-        consecutive nights at the Anthem,...
-        </div>
-    </li>
-    <li>
-        <Link to="http://georgetownradio.com/preview-l7-tarah-who-the-black-cat-9-18">
-        <StaticImage src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/l7-1-1200x675-1.jpg?resize=1020%2C500"
-            alt="L7"
-        />
-        </Link>
-        <h2 class="h3">
-            Preview: L7 &#038; Tarah Who? @ The Black Cat, 9/18
-        </h2>
-        <div>
-        Though often associated with the early 90s grunge and riot grrrl
-        explosion, LA-based band, L7,...
-        </div>
-    </li>
-    <li>
-        <Link to="http://georgetownradio.com/the-dc-hold-on-cab-ellis-with-gooseberry-and-alex-alavi-the-funky-breakfast-the-pocket">
-        <StaticImage src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/cab-ellis.jpeg?resize=400%2C200"
-            alt="Cab Ellis"
-        />
-        </Link>
-        <h2 class="h3">
-        The DC Hold On: Cab Ellis with Gooseberry and Alex Alavi &#038; the Funky Breakfast @ The Pocket
-        </h2>
-        <div>
-        Ask the average American how they picture the lives of young
-        adults in the District of Columbia,...
-        </div>
-    </li>
-    <li>
-        <Link to="http://georgetownradio.com/jockstrap-makes-dc9-their-own">
-        <StaticImage src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/Screen-Shot-2023-02-04-at-7.22.27-PM.png?resize=852%2C458"
-            alt="Jockstrap"
-        />
-        </Link>
-        <h2 class="h3">
-        Jockstrap Makes DC9 Their Own
-        </h2>
-        <div>
-        British duo Jockstrap kicked off their first ever North American
-        tour at DC9 on November 17th. The...
-        </div>
-    </li>
-    </ul>
-  );
-};
-
-export default Slides; */
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ImageSlider);
 
 /***/ }),
 
@@ -3196,7 +3104,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_header_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/header/layout */ "./src/components/header/layout.js");
 /* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/footer.js */ "./src/components/footer.js");
-/* harmony import */ var _homepage_slideshow_slides__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homepage_slideshow/slides */ "./src/pages/homepage_slideshow/slides.js");
+/* harmony import */ var _homepage_slideshow_ImageSlider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homepage_slideshow/ImageSlider */ "./src/pages/homepage_slideshow/ImageSlider.js");
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./homepage.module.css */ "./src/pages/homepage.module.css");
@@ -3204,16 +3112,39 @@ __webpack_require__.r(__webpack_exports__);
 //import Navbar from "../components/navbar/Navbar"
 
 
+ // Import the ImageSlider component
 
 
 
 
+// Array of objects representing slides
+const slides = [{
+  imageSrc: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/image.png?resize=1020%2C500",
+  link: "http://georgetownradio.com/preview-janelle-monae-the-anthem-9-24-9-25",
+  title: "Preview: Janelle Monáe @ the Anthem 9/24 & 9/25",
+  description: "Janelle Monáe brings the Age of Pleasure tour to DC for two consecutive nights at the Anthem..."
+}, {
+  imageSrc: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/09/l7-1-1200x675-1.jpg?resize=1020%2C500",
+  link: "http://georgetownradio.com/preview-l7-tarah-who-the-black-cat-9-18",
+  title: "Preview: L7 & Tarah Who? @ The Black Cat, 9/18",
+  description: "Though often associated with the early 90s grunge and riot grrrl explosion, LA-based band, L7,..."
+}, {
+  imageSrc: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/cab-ellis.jpeg?resize=400%2C200",
+  link: "http://georgetownradio.com/the-dc-hold-on-cab-ellis-with-gooseberry-and-alex-alavi-the-funky-breakfast-the-pocket",
+  title: "The DC Hold On: Cab Ellis with Gooseberry and Alex Alavi & the Funky Breakfast @ The Pocket",
+  description: "Ask the average American how they picture the lives of young adults in the District of Columbia,..."
+}, {
+  imageSrc: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/02/Screen-Shot-2023-02-04-at-7.22.27-PM.png?resize=852%2C458",
+  link: "http://georgetownradio.com/jockstrap-makes-dc9-their-own",
+  title: "Jockstrap Makes DC9 Their Own",
+  description: "British duo Jockstrap kicked off their first ever North American tour at DC9 on November 17th. The..."
+}];
 const Homepage = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_header_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: "Georgetown Radio"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_homepage_slideshow_ImageSlider__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    slides: slides
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    classname: _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__.slides
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_homepage_slideshow_slides__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
     className: _homepage_module_css__WEBPACK_IMPORTED_MODULE_5__.reviews
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Single Review"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_4__.Link, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_6__.StaticImage, {
     src: "https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2021/03/hitlikeagirl-emilyberger.jpg?resize=350%2C200",
@@ -4104,10 +4035,10 @@ function instanceOfHashable(object) {
 
 /***/ }),
 
-/***/ "./src/pages/homepage_slideshow/slider.css":
-/*!*************************************************!*\
-  !*** ./src/pages/homepage_slideshow/slider.css ***!
-  \*************************************************/
+/***/ "./src/pages/homepage_slideshow/ImageSlider.css":
+/*!******************************************************!*\
+  !*** ./src/pages/homepage_slideshow/ImageSlider.css ***!
+  \******************************************************/
 /***/ (() => {
 
 
