@@ -2810,7 +2810,7 @@ const Layout = ({
     src: "../../images/headerLogo.png",
     class: "headerImage",
     alt: "header image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1455758500.json */ "./.cache/caches/gatsby-plugin-image/1455758500.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2314226891.json */ "./.cache/caches/gatsby-plugin-image/2314226891.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     class: "subheader"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
@@ -2823,28 +2823,28 @@ const Layout = ({
     src: "../../images/facebook.png",
     alt: "Facebook",
     class: "image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2930038459.json */ "./.cache/caches/gatsby-plugin-image/2930038459.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/459693168.json */ "./.cache/caches/gatsby-plugin-image/459693168.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://www.instagram.com/georgetownradio/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../../images/insta-logo.png",
     alt: "Instagram",
     class: "image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1869826869.json */ "./.cache/caches/gatsby-plugin-image/1869826869.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/3164570880.json */ "./.cache/caches/gatsby-plugin-image/3164570880.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://soundcloud.com/wgtb-rotation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../../images/soundcloud.png",
     alt: "Soundcloud",
     class: "image-soundcloud",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1463195017.json */ "./.cache/caches/gatsby-plugin-image/1463195017.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2154550138.json */ "./.cache/caches/gatsby-plugin-image/2154550138.json")
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "https://twitter.com/wgtb"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.StaticImage, {
     src: "../../images/twitter.png",
     alt: "X",
     class: "image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/760360157.json */ "./.cache/caches/gatsby-plugin-image/760360157.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/813267849.json */ "./.cache/caches/gatsby-plugin-image/813267849.json")
   })))), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
@@ -4552,20 +4552,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1455758500.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2154550138.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1455758500.json ***!
-  \***********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
-
-/***/ }),
-
-/***/ "./.cache/caches/gatsby-plugin-image/1463195017.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1463195017.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2154550138.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4574,9 +4563,20 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1869826869.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2314226891.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1869826869.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2314226891.json ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png","srcSet":"/static/c9758f40006b94f7b938b7444cff8049/5b6d4/headerLogo.png 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/8d5de/headerLogo.png 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/a7c2c/headerLogo.png 1020w","sizes":"(min-width: 1020px) 1020px, 100vw"},"sources":[{"srcSet":"/static/c9758f40006b94f7b938b7444cff8049/2cdf6/headerLogo.webp 255w,\\n/static/c9758f40006b94f7b938b7444cff8049/e0271/headerLogo.webp 510w,\\n/static/c9758f40006b94f7b938b7444cff8049/9c588/headerLogo.webp 1020w","type":"image/webp","sizes":"(min-width: 1020px) 1020px, 100vw"}]},"width":1020,"height":225}');
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-image/3164570880.json":
+/*!***********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/3164570880.json ***!
   \***********************************************************/
 /***/ ((module) => {
 
@@ -4585,10 +4585,10 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2930038459.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2930038459.json ***!
-  \***********************************************************/
+/***/ "./.cache/caches/gatsby-plugin-image/459693168.json":
+/*!**********************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-image/459693168.json ***!
+  \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -4596,9 +4596,9 @@ module.exports = JSON.parse('{"layout":"constrained","backgroundColor":"#080808"
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/760360157.json":
+/***/ "./.cache/caches/gatsby-plugin-image/813267849.json":
 /*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/760360157.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/813267849.json ***!
   \**********************************************************/
 /***/ ((module) => {
 
