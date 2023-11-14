@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Navbar from "../components/navbar/Navbar.js"
-import ScheduleUploader from '../components/schedule_sheet.js'
+import GoogleSheetEmbed from '../components/schedule_sheet.js'
 
 const pageStyles = {
     color: "#232129",
@@ -88,7 +88,7 @@ const pageStyles = {
         <h1 style={headingStyles}>
           Schedule
         </h1>
-        <ScheduleUploader />
+        <GoogleSheetEmbed />
       </div>
     );
   };
