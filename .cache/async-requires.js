@@ -5,7 +5,7 @@ exports.components = {
   "component---src-pages-blog-js": () => import("./../../../src/pages/blog.js?export=default" /* webpackChunkName: "component---src-pages-blog-js" */),
   "component---src-pages-contact-us-js": () => import("./../../../src/pages/contact-us.js?export=default" /* webpackChunkName: "component---src-pages-contact-us-js" */),
   "component---src-pages-dj-services-js": () => import("./../../../src/pages/dj-services.js?export=default" /* webpackChunkName: "component---src-pages-dj-services-js" */),
-  "component---src-pages-homepage-js": () => import("./../../../src/pages/homepage.js?export=default" /* webpackChunkName: "component---src-pages-homepage-js" */),
+  "component---src-pages-homepage-slideshow-image-slider-js": () => import("./../../../src/pages/homepage_slideshow/ImageSlider.js?export=default" /* webpackChunkName: "component---src-pages-homepage-slideshow-image-slider-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=default" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-schedule-js": () => import("./../../../src/pages/schedule.js?export=default" /* webpackChunkName: "component---src-pages-schedule-js" */),
   "component---src-pages-shows-bye-bye-miss-american-thighs-js": () => import("./../../../src/pages/shows/bye-bye-miss-american-thighs.js?export=default" /* webpackChunkName: "component---src-pages-shows-bye-bye-miss-american-thighs-js" */),
@@ -23,7 +23,6 @@ exports.head = {
   "component---src-pages-blog-js": () => import("./../../../src/pages/blog.js?export=head" /* webpackChunkName: "component---src-pages-blog-jshead" */),
   "component---src-pages-contact-us-js": () => import("./../../../src/pages/contact-us.js?export=head" /* webpackChunkName: "component---src-pages-contact-us-jshead" */),
   "component---src-pages-dj-services-js": () => import("./../../../src/pages/dj-services.js?export=head" /* webpackChunkName: "component---src-pages-dj-services-jshead" */),
-  "component---src-pages-homepage-js": () => import("./../../../src/pages/homepage.js?export=head" /* webpackChunkName: "component---src-pages-homepage-jshead" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=head" /* webpackChunkName: "component---src-pages-index-jshead" */),
   "component---src-pages-schedule-js": () => import("./../../../src/pages/schedule.js?export=head" /* webpackChunkName: "component---src-pages-schedule-jshead" */)
 }

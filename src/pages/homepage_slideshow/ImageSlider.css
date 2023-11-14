@@ -1,0 +1,61 @@
+/* ImageSlider.css */
+.slider {
+  max-width: 60%; /* Full width of the container */
+  margin: 20px auto; /* This centers the slider */
+  position: relative;
+  overflow: hidden; /* This ensures that overflow content is not visible */
+}
+
+.slide {
+  display: flex; /* Use flexbox to layout image and text */
+  flex-direction: column; /* Stack image and text vertically */
+  justify-content: center; /* Center content vertically in the slide */
+  align-items: center; /* Center content horizontally in the slide */
+  width: 100%; /* Set slide width to match the slider */
+  height: 500px; /* Set a fixed height for the slide */
+  position: absolute; /* Overlay slides on top of each other */
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease; /* Smooth transition for fading in */
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative; /* Active slide is positioned relative to the slider */
+}
+
+.image {
+  width: 100%; /* This ensures that the image takes the full width of the slide */
+  height: 400px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensures the image covers the area, might crop if aspect ratio is different */
+}
+
+/* Style for the caption text */
+.slide-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Overlay on the bottom part of the image */
+  color: #fff; /* Text color */
+  width: 100%; /* Match width of the slide */
+  padding: 1em; /* Add padding around text */
+  box-sizing: border-box; /* Include padding in the width */
+}
+  
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff; /* Change the color so it's visible on your background */
+    color: #004165; /* Georgetown Blue */
+    border: 1px solid #004165; /* Georgetown Blue */
+    padding: 0.5em 1em;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
