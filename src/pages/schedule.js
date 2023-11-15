@@ -2,11 +2,13 @@ import * as React from 'react'
 // import Navbar from '../../components/navbar/Navbar';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "../components/header/layout"
+import GoogleSheetEmbed from '../components/schedule_sheet'
 
   const Header = () => {
     return(
         <container>
           <Layout pageTitle="Schedule"></Layout>
+          <GoogleSheetEmbed />
         </container>
     )
   }
