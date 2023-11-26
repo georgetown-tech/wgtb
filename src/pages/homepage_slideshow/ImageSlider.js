@@ -30,6 +30,7 @@ const ImageSlider = ({ slides }) => {
         <div
           className={index === current ? 'slide active' : 'slide'}
           key={index}
+          
         >
           {index === current && (
             <>
