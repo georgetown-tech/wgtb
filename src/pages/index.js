@@ -5,10 +5,11 @@ import Footer from "../components/footer/footer.js"
 import ImageSlider from './homepage_slideshow/ImageSlider'; // Import the ImageSlider component
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import{reviews,
+import{
 playlists,
 slideImage
 } from "./homepage.module.css"
+import Reviews from '../components/reviews/reviews';
 
 // Array of objects representing slides
 const slides = [
@@ -48,39 +49,8 @@ const Homepage = () => {
 {/* SLIDES */}
   <ImageSlider slides={slides} />
 {/* REVIEWS */}
-      <section className={reviews}>
-        <h2>Single Review</h2>
-        <article>
-          <div>
-            <Link>
-              <StaticImage
-                src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2021/03/hitlikeagirl-emilyberger.jpg?resize=350%2C200"
-                alt=""
-                />
-            </Link>
-          </div>
-          <h3>
-            Hit Like A Girl’s Newest Single “Monsters” is an Anthem for the Forgotten
-          </h3>
-          <p>
-            Hit Like A Girl’s newest single, “Monsters”, came out on March
-            16, 2021. "Monsters" is the second single shared from their
-            third album, Heart Racer, which will be released on April 2nd
-            through...
-          </p>
-        </article>
-        <h2>Album Reviews</h2>
-          <article>
-            <div>
-              <Link>
-                <StaticImage>
-                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2023/01/og_image.jpg?resize=350%2C200"
-                  alt=""
-                </StaticImage>
-              </Link>
-            </div>
-          </article>
-      </section>
+    <Reviews>
+    </Reviews>
 {/* PLAYLIST */}
       <section className={playlists}>
         <h2>Playlists</h2>
