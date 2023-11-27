@@ -1,7 +1,7 @@
 import * as React from 'react'
 //import Navbar from "../components/navbar/Navbar"
 import Layout from "../components/header/layout"
-import Footer from "../components/footer.js"
+import Footer from "../components/footer/footer.js"
 import ImageSlider from './homepage_slideshow/ImageSlider'; // Import the ImageSlider component
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
