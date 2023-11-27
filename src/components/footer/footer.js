@@ -1,9 +1,10 @@
 import React from "react";
+import './footer.css';
 
 const Footer = () => {
     return (
-    <div id="cb-footer-inner" class="clearfix">
-        <div class="cb-footer-widget clearfix first">
+    <div id="cb-footer-inner" className="clearfix">
+        <div className="cb-footer-widget clearfix first">
             <div id="linkcat-2" class="widget_links">
             <h3 class="cb-footer-widget-title">Blogroll</h3>
             <ul class="xoxo blogroll">
@@ -31,7 +32,7 @@ const Footer = () => {
             </ul>
             </div>
         </div>
-        <div class="cb-footer-widget clearfix">
+        <div className="cb-footer-widget clearfix first">
             <div id="linkcat-4" class="widget_links">
             <h3 class="cb-footer-widget-title">DC Music Venues</h3>
             <ul class="xoxo blogroll">
@@ -76,7 +77,7 @@ const Footer = () => {
             </ul>
             </div>
         </div>
-        <div class="cb-footer-widget clearfix">
+        <div className="cb-footer-widget clearfix first">
             <div id="custom_html-5" class="widget_text widget_custom_html">
             <h3 class="cb-footer-widget-title">Our Location</h3>
             <div class="textwidget custom-html-widget">
@@ -103,7 +104,7 @@ const Footer = () => {
             </div>
             </div>
         </div>
-        <div class="cb-footer-widget clearfix">
+        <div className="cb-footer-widget clearfix first">
             <div id="text-17" class="widget_text">
             <div class="textwidget">
                 <img
@@ -114,7 +115,7 @@ const Footer = () => {
             </div>
         </div>
     </div>
-        );
+    );
 };
 
 export default Footer;
