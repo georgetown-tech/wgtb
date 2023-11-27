@@ -1,0 +1,25 @@
+.fullsection {
+    width: 80%;
+    padding: 2% 10%;
+}
+
+.sectiontitle {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: blue;
+    padding: 0 10px 5px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.q {
+    font-weight: bold;
+    color: #292929;
+}
+
+a {
+    text-decoration: none;
+    color: #f01f1f;
+}
