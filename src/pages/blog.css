@@ -1,0 +1,10 @@
+.playlist-wrap{
+    padding: 20px 5px;
+    width: 300px;
+    border: none;
+    /* width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0; */
+}
