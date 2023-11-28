@@ -11,7 +11,7 @@
     width: 80%; /* Adjusted to 80% of the container width */
     height: 80vh; /* Adjusted to 80% of the container height */
     border: none; /* Removed border for cleaner appearance */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Keep or remove based on preference */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5); /* Keep or remove based on preference */
   }
   
   
