@@ -8,7 +8,7 @@ const GoogleSheetEmbed = () => {
       <iframe
         title="Google Sheet Embed"
         className="google-sheet-iframe"
-        src="https://docs.google.com/spreadsheets/d/1UU-dhZu0D0RkqyRYkIzQMVXrjiE8UfNwBCJc5xevrGM/"
+        src="https://docs.google.com/spreadsheets/d/1UU-dhZu0D0RkqyRYkIzQMVXrjiE8UfNwBCJc5xevrGM/edit?rm=minimal"
         frameBorder="0"
         allowFullScreen
       ></iframe>
@@ -17,6 +17,7 @@ const GoogleSheetEmbed = () => {
 };
 
 export default GoogleSheetEmbed;
+
 
 
 

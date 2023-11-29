@@ -1,0 +1,44 @@
+/* footer.css */
+#cb-footer-inner {
+    background-color: #3d657a; /* Georgetown Blue */
+    color: rgb(61, 59, 81);
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cb-footer-widget {
+    width: 25%; /* Adjust based on the number of columns */
+    float: left;
+    padding: 0 15px;
+    box-sizing: content-box;
+  }
+  
+  .cb-footer-widget-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline 3px;
+  }
+  
+  .blogroll {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .blogroll li a {
+    color: rgb(63, 92, 112);
+    text-decoration: none;
+    line-height: 2;
+  }
+  
+  .blogroll li a:hover {
+    text-decoration: underline;
+  }
+  
+  .textwidget {
+    margin-top: 15px;
+  }
+  
+  .textwidget img {
+    max-width: 100%;
+    height: auto;
+  }
