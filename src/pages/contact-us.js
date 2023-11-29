@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import "./contact.css"
+import Footer from "../components/footer"
 
 {/* <script src="https://smtpjs.com/v3/smtp.js"/>
 function sendEmail(){
@@ -50,6 +51,11 @@ function sendEmail(){
           </div>
           {/* <input type="reset" value="Clear" /> */}
         </form>
+        {/* FOOTER */}
+        <footer>
+            <Footer>
+            </Footer>
+        </footer>
       </container>
     )
   }

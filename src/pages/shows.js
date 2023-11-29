@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "gatsby";
 import Layout from "../components/header/layout"
+import Footer from "../components/footer"
 
 const Shows = () => {
   return (
@@ -22,6 +23,11 @@ const Shows = () => {
           </li>
         </ul>
       </div>
+      {/* FOOTER */}
+      <footer>
+        <Footer>
+        </Footer>
+      </footer>
     </container>
   );
 };

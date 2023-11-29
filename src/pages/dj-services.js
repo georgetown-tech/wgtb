@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import "../styles/about.css"
+import Footer from "../components/footer"
 
 const DjServicesPage = () => (
   <container>
@@ -68,6 +69,11 @@ const DjServicesPage = () => (
     </ul>
     <p>Contact our Events Director at events@georgetownradio.com for more information on how to book your next show!</p>
     </div>
+    {/* FOOTER */}
+      <footer>
+          <Footer>
+          </Footer>
+      </footer>
     </container>
     )
 
