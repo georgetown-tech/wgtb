@@ -1,10 +1,17 @@
 /* styling for homepage */
+h2{
+    font-family: 'Montserrat';
+    color: #212529;
+}
+
+
 .playlist-container{
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
     margin: 10px 0px;
+    border-radius: 10px;
 }
 
 .playlist-container StaticImage {

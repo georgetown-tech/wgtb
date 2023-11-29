@@ -7,11 +7,17 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Layout = ({ pageTitle, children }) => {
   return (
     <div class="container">
+      <div class= "header">
         <Link to= "/">
           <StaticImage src="../../images/headerLogo.png" class="headerImage" alt="header image"/>
         </Link>
         <div class="subheader">
-          <h1 class="page-title">{pageTitle}</h1>
+          {/* <h1 class="page-title">{pageTitle}</h1> */}
+          <figure class = "audio-wrap">
+            <figcaption>Listen live:</figcaption>
+            <audio controls src="https://s4.radio.co/sbeba14c92/listen">
+            </audio>
+          </figure>
           <div class= "socials">
             <Link to= "https://www.facebook.com/georgetownradio">
               <StaticImage src= "../../images/facebook.png" alt="Facebook" class="image"/>
@@ -27,11 +33,11 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </div>
         </div>
+      </div>
         {children}
       <nav>
         <Navbar/>
       </nav>
-       
     </div>
   )
 }
