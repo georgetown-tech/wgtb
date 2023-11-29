@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
-import Footer from "../components/footer/footer.js"
+import Footer from "../components/footer.js"
 import "./blog.css"
 
   const Header = () => {
