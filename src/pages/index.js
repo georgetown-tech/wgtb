@@ -10,6 +10,8 @@ playlists,
 slideImage
 } from "./homepage.module.css"
 import Reviews from '../components/reviews/reviews';
+import Playlist from '../components/playlist/PlaylistSlider';
+import PlaylistSlider from '../components/playlist/PlaylistSlider';
 
 // Array of objects representing slides
 const slides = [
@@ -52,43 +54,10 @@ const Homepage = () => {
     <Reviews>
     </Reviews>
 {/* PLAYLIST */}
-      <section className={playlists}>
-        <h2>Playlists</h2>
-        <ul>
-          <li>
-            <Link>
-              <StaticImage
-                src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/09/fiona-apples-and-oranges.png?resize=380%2C380"
-                alt=""/>
-            <h3>
-                FA&#038;O: Fall Rotation Recommendations
-            </h3>
-            </Link>
-          </li>
-          <li>
-              <Link>
-                <StaticImage
-                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-2.55.23-PM.png?resize=380%2C380"
-                  alt=""
-                />
-            <h3>
-                Preview + Playlist: MICHELLE and Sidney Gish @ BDA
-            </h3>
-            </Link>
-          </li>
-          <li>
-              <Link>
-                <StaticImage
-                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/01/4641-1.jpeg?resize=380%2C380"
-                  alt=""
-                />
-            <h3>
-              Playlist: Honeymoon in Paris
-            </h3>
-            </Link>
-          </li>
-        </ul>
-      </section>
+    {/*
+    <PlaylistSlider>
+    </PlaylistSlider>
+    */}
     {/* FOOTER */}
       <footer>
         <Footer>

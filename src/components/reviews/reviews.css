@@ -1,0 +1,19 @@
+/* reviews.css */
+
+section {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto; /* centers the section */
+}
+
+section h2 {
+  width: 50%;
+  margin-bottom: 0; /* optional: removes the space below the h2 */
+}
+
+article {
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px; /* adds space between the title and the article */
+}

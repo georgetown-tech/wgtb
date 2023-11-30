@@ -1,0 +1,103 @@
+/* PlaylistSlider.module.css */
+
+.playlistSlider {
+  max-width: 800px; /* Adjust to your preference */
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+}
+
+.playlistSlide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%; /* Start off the right edge of the screen */
+  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.playlistSlideActive {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-100%); /* Bring the active slide into view */
+  left: 0; /* Position the active slide to start from the left edge */
+}
+
+.playlistImage {
+  width: 100%;
+  height: auto; /* Adjust height as needed, or use a fixed height */
+  object-fit: cover; /* Covers the area, may crop if aspect ratio is different */
+}
+
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  font-size: 18px;
+  user-select: none;
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+.rightArrow {
+  right: 10px;
+}
+
+.playlistContent {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.playlistTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.playlistContent h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.playlistContent p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .playlistSlider {
+    max-width: 100%;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    font-size: 16px; /* Smaller arrows on smaller screens */
+  }
+
+  .playlistTitle {
+    font-size: 20px; /* Adjust title size on smaller screens */
+  }
+
+  .playlistContent h3 {
+    font-size: 18px; /* Adjust slide title size on smaller screens */
+  }
+
+  .playlistContent p {
+    font-size: 14px; /* Adjust description size on smaller screens */
+  }
+}
