@@ -54,8 +54,10 @@ const Homepage = () => {
     <Reviews>
     </Reviews>
 {/* PLAYLIST */}
+    {/*
     <PlaylistSlider>
     </PlaylistSlider>
+    */}
     {/* FOOTER */}
       <footer>
         <Footer>
