@@ -13,6 +13,7 @@ const About = () => {
       <Layout pageTitle="About Us" />
 
       <div class="fullsection">
+
         {/* This is the video at the top of the page */}
         <center>
           <iframe
@@ -25,7 +26,8 @@ const About = () => {
             allowfullscreen
           ></iframe>
         </center>
-        <br />
+        <br /><br />
+
         <h2 class="sectiontitle">Club Overview</h2>
         <div class="overview">
           <p>

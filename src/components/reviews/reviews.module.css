@@ -1,0 +1,75 @@
+.reviewsContainer {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 40px;
+  background: #f9f9f9; /* A light background to match the navbar */
+  color: #333; /* Dark grey text to match the navbar */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Match the navbar's font */
+}
+
+.reviewItem {
+  max-width: 35%;
+  flex-basis: calc(50% - 20px);
+  padding: 20px;
+  border: 2px solid #333; /* Solid border for consistency with navbar buttons */
+  border-radius: 4px; /* Slightly rounded corners to match navbar buttons */
+  background: #fff;
+  text-align: left;
+  box-shadow: none; /* Remove any shadow if you want flat design like the navbar */
+}
+
+.reviewTitle, .reviewText {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.reviewTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.reviewText {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.reviewImage {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Style links to match the navbar button style */
+.reviewItem a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: 2px solid #999ba7;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #646287;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reviewItem a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.reviewLinkTitle {
+  display: block; /* Makes the link behave like a block element */
+  color: #252636;
+  text-decoration: none; /* Removes the underline */
+  font-size: 1.2rem; /* Matches the size of an h3 */
+  margin-bottom: 0.5rem; /* Space below the title */
+  font-weight: bold; /* Makes it bold like a title */
+  transition: color 0.3s ease; /* Smooth color transition for hover */
+}
+
+.reviewLinkTitle:hover {
+  color: #1a1a1a; /* Darker color on hover */
+}

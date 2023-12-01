@@ -7,6 +7,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import "./homepage.css"
 import Reviews from '../components/reviews/reviews';
+import Playlist from '../components/playlist/PlaylistSlider';
+import PlaylistSlider from '../components/playlist/PlaylistSlider';
 
 // Array of objects representing slides
 const slides = [
