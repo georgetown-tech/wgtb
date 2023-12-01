@@ -23,6 +23,7 @@ function sendEmail(){
       <container>
         <Layout pageTitle = "Contact Us"/>
         {/* depending on CMS we use, it may be able to generate forms automatically */}
+        <h2>Please fill out the contact form below with any inquiries:</h2>
         <form class="contact-form" method="post" action="#"> {/*# is placeholder for sending form data*/}
           <label for="name">
             Name
@@ -51,6 +52,37 @@ function sendEmail(){
           </div>
           {/* <input type="reset" value="Clear" /> */}
         </form>
+
+        <h2>Contact Information by Department:</h2>
+        <p>
+          General Managers:
+Ian Tracy, Serena Korkmaz;
+gm@georgetownradio.com
+Website Directors:
+Luke Monnich, Connor Lammas, Carolina Oxenstierna;
+rotation@georgetownradio.com
+Music Directors:
+Christian Joseph;
+music@georgetownradio.com
+Events Directors:
+Liepa Ivanauskas, Lucy Binder;
+events@georgetownradio.com
+Programming Director:
+Anjali Paye
+programming@georgetownradio.com
+Promotions / Social Media Directors:
+Darsey Trudo, Nina Jennings, Zoe Klausner;
+promotions@georgetownradio.com
+Business Director:
+Ian Tracy
+business@georgetownradio.com
+DJ Services:
+Eloise Owen
+djservices@georgetownradio.com
+Technology Director:
+Will Atkinson
+technology@georgetownradio.com
+          </p>
         {/* FOOTER */}
         <footer>
             <Footer>
