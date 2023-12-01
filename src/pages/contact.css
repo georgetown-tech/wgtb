@@ -1,6 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .contact-form{
     max-width: 60%;
-    margin: 2rem auto; /* center form on page */
+    margin: 2rem auto; /*center form on page*/
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;

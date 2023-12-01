@@ -40,6 +40,11 @@
   border-radius: 5px; /* Optional: to make the containers rounded */
   font-family: 'Roboto', sans-serif; /* Change font */
 }
+.navbar a.active{
+  font-weight: bold; /* Or apply any other style you want for the active tab */
+  padding: 12px 35px;
+  background-color: #ADB5BD;
+}
 
 .navbar li a:hover {
   color: white; /* Change hover color as needed */

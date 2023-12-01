@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from "../components/header/layout"
 // Imports style sheet
 import "../styles/about.css"
+import Footer from "../components/footer"
 
 
 // Creates the header for the page
@@ -120,6 +121,12 @@ const About = () => {
         </div>
 
       </div>
+
+      {/* FOOTER */}
+      <footer>
+        <Footer>
+        </Footer>
+      </footer>
 
 
     </container>

@@ -5,10 +5,7 @@ import Footer from "../components/footer/footer.js"
 import ImageSlider from './homepage_slideshow/ImageSlider'; // Import the ImageSlider component
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import{
-playlists,
-slideImage
-} from "./homepage.module.css"
+import "./homepage.css"
 import Reviews from '../components/reviews/reviews';
 import Playlist from '../components/playlist/PlaylistSlider';
 import PlaylistSlider from '../components/playlist/PlaylistSlider';
@@ -54,10 +51,53 @@ const Homepage = () => {
     <Reviews>
     </Reviews>
 {/* PLAYLIST */}
-    {/*
-    <PlaylistSlider>
-    </PlaylistSlider>
-    */}
+      <h2>Spotify Playlists</h2>
+      <section class="playlist-container">
+            <iframe class = "spotify-playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
+            width="100%" height="380" allowfullscreen="" frameborder="0" allow="autoplay; 
+            clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/3u0TgZsPMoL13M88FVlH0U?utm_source=generator&theme=0"
+             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
+              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/452Fl9XoT6gfNjv80IJoMF?utm_source=generator&theme=0"
+             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
+              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
+            width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; 
+            clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </section>
+      <h2>Playlists + Reviews</h2>
+      <section class= "playlist-container">
+            <Link>
+              <StaticImage
+                src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/09/fiona-apples-and-oranges.png?resize=380%2C380"
+                alt=""/>
+              <h3>
+                FA&#038;O: Fall Rotation Recommendations
+              </h3>
+            </Link>
+              <Link>
+                <StaticImage
+                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-2.55.23-PM.png?resize=380%2C380"
+                  alt=""
+                />
+              <h3>
+                Preview + Playlist: MICHELLE and Sidney Gish @ BDA
+              </h3>
+            </Link>
+              <Link>
+                <StaticImage
+                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/01/4641-1.jpeg?resize=380%2C380"
+                  alt=""
+                />
+              <h3>
+              Playlist: Honeymoon in Paris
+              </h3>
+            </Link>
+      </section>
     {/* FOOTER */}
       <footer>
         <Footer>

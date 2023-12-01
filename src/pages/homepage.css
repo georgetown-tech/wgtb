@@ -1,0 +1,36 @@
+/* styling for homepage */
+h2{
+    font-family: 'Montserrat';
+    color: #212529;
+}
+
+
+.playlist-container{
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.playlist-container StaticImage {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 380px; /* Limit the maximum width of the image */
+    max-height: 380px; /* Limit the maximum height of the image */
+}
+.playlist-container iframe{
+    width: 100%; /* Make the image fill the container width */
+    height: 500px; /* Maintain aspect ratio */
+    max-width: 380px; /* Limit the maximum width of the image */
+    max-height: 380px; /* Limit the maximum height of the image */
+}
+
+/* styling for headings within each link */
+.playlist-container h3 {
+margin-top: 10px; /* Adjust the margin as needed */
+font-size: 16px; /* Adjust the font size as needed */
+color: #fff; /* Text color */
+text-align: center; /* Center the text */
+}
