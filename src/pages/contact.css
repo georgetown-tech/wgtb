@@ -41,3 +41,14 @@ button{
 button:hover{
     background-color: #000000;
 }
+.contact-info{
+    margin: 10px;
+}
+.contact-info h3{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+}
+.contact-info p, .contact-info a{
+     padding: 0px 15px;
+}

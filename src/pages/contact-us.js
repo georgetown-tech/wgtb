@@ -53,36 +53,38 @@ function sendEmail(){
           {/* <input type="reset" value="Clear" /> */}
         </form>
 
+
         <h2>Contact Information by Department:</h2>
-        <p>
-          General Managers:
-Ian Tracy, Serena Korkmaz;
-gm@georgetownradio.com
-Website Directors:
-Luke Monnich, Connor Lammas, Carolina Oxenstierna;
-rotation@georgetownradio.com
-Music Directors:
-Christian Joseph;
-music@georgetownradio.com
-Events Directors:
-Liepa Ivanauskas, Lucy Binder;
-events@georgetownradio.com
-Programming Director:
-Anjali Paye
-programming@georgetownradio.com
-Promotions / Social Media Directors:
-Darsey Trudo, Nina Jennings, Zoe Klausner;
-promotions@georgetownradio.com
-Business Director:
-Ian Tracy
-business@georgetownradio.com
-DJ Services:
-Eloise Owen
-djservices@georgetownradio.com
-Technology Director:
-Will Atkinson
-technology@georgetownradio.com
-          </p>
+        <div class= "contact-info">
+          <h3>General Managers:</h3>
+              <p>Ian Tracy, Serena Korkmaz</p>
+              <a href="gm@georgetownradio.com">gm@georgetownradio.com</a>
+          <h3>Website Directors:</h3>
+            <p>Luke Monnich, Connor Lammas, Carolina Oxenstierna</p>
+            <a href="rotation@georgetownradio.com">rotation@georgetownradio.com</a>
+          <h3>Music Directors:</h3>
+            <p>Christian Joseph</p>
+            <a href="music@georgetownradio.com">music@georgetownradio.com</a>
+          <h3>Events Directors:</h3>
+            <p>Liepa Ivanauskas, Lucy Binder</p>
+            <a href="events@georgetownradio.com">events@georgetownradio.com</a>
+          <h3>Programming Director:</h3>
+            <p>Anjali Paye</p>
+            <a href="programming@georgetownradio.com">programming@georgetownradio.com</a>
+          <h3>Promotions / Social Media Directors:</h3>
+            <p>Darsey Trudo, Nina Jennings, Zoe Klausner</p>
+            <a href="promotions@georgetownradio.com">promotions@georgetownradio.com</a>
+          <h3>Business Director:</h3>
+            <p>Ian Tracy</p>
+            <a href="business@georgetownradio.com">business@georgetownradio.com</a>
+          <h3>DJ Services:</h3>
+            <p>Eloise Owen</p>
+            <a href="djservices@georgetownradio.com">djservices@georgetownradio.com</a>
+          <h3>Technology Director:</h3>
+            <p>Will Atkinson</p>
+            <a href="technology@georgetownradio.com">technology@georgetownradio.com</a>
+        </div>
+
         {/* FOOTER */}
         <footer>
             <Footer>
