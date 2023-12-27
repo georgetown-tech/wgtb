@@ -1,42 +1,66 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
+import { graphql } from 'gatsby';
 import "./blog.css"
 
-  const Header = () => {
-    return(
-        <container>
-          <Layout pageTitle="The Rotation"/>
-          <div class = "playlist-wrap">
-            <iframe class = "spotify-playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
-            width="100%" height="380" allowfullscreen="" frameborder="0" allow="autoplay; 
-            clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <iframe src="https://open.spotify.com/embed/playlist/3u0TgZsPMoL13M88FVlH0U?utm_source=generator&theme=0"
-             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
-              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <iframe src="https://open.spotify.com/embed/playlist/452Fl9XoT6gfNjv80IJoMF?utm_source=generator&theme=0"
-             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
-              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <iframe src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
-            width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; 
-            clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+const Article = ({ articles }) => {
+  return (
+    <main>
+      {articles.map((article) => (
+        <div key={article.id}>
+          <h1>{article.title}</h1>
+          <h2>{article.author}</h2>
+          <h2>{article.datetime}</h2>
+          <img
+            src={article.image.url}
+            alt={article.title}
+            style={{ width: 300, height: 'auto' }}
+          />
+          <p>{article.content.content}</p>
+        </div>
+      ))
+      }
+    </main>
+)};
 
+const Header = ({data}) => {
+  const articles = data.allContentfulArticle.nodes;
+  return(
+      <container>
+        <Layout pageTitle="The Rotation"/>
+        <div class ="articles">
+          <Article articles={articles}/>
+        </div>
 
-          </div>
         {/* FOOTER */}
-          <footer>
-            <Footer>
-            </Footer>
-          </footer>
-        </container>
-    )
-  }
+        <footer>
+          <Footer>
+          </Footer>
+        </footer>
+      </container>
+  )
+};
 
-// You'll learn about this in the next task, just copy it for now
 export const Head = () => <title>Home Page</title>
 
-// Step 3: Export your component
+export const query = graphql`
+query {
+  allContentfulArticle {
+    nodes {
+      url
+      title
+      author
+      datetime
+      image{
+        url
+      }
+      content {
+        content
+      }
+    }
+  }
+}
+`;
+
 export default Header
