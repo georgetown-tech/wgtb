@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "gatsby";
 import Layout from "../components/header/layout"
-import Footer from "../components/footer"
+import Footer from "../components/footer/footer.js"
 
 const Shows = () => {
   return (

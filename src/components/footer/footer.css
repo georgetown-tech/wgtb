@@ -1,44 +1,81 @@
-/* footer.css */
-#cb-footer-inner {
-    background-color: #3d657a; /* Georgetown Blue */
-    color: rgb(61, 59, 81);
+.footer-divider{
+  background-color: #418fde;
+  height: 15px;
+  border: none;
+}
+
+.footer-header{
+  font-family: 'PT Serif', serif;
+  color: #212529;
+  text-decoration: underline;
+}
+.footer-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #495057;
     padding: 20px 0;
-    font-family: Arial, sans-serif;
-  }
+    font-family: 'Open Sans';
+}
+.footer-wrap ul{
+  list-style: none;
+}
+.footer-wrap a{
+  color: #495057;
+  text-decoration: none;
+}
+
+.footer-column{
+  padding: 0px 30px;
+}
+.footer-column:first-child{
+  margin-left: 150px;
+}
+.footer-column:last-child{
+  margin-right: 150px;
+}
+.footer-logo{
+  max-width: 80%;
+  max-height: auto;
+}
+.spacing{
+  height: 100px;
+  border: none;
+}
+
+.socials {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
   
-  .cb-footer-widget {
-    width: 25%; /* Adjust based on the number of columns */
-    float: left;
-    padding: 0 15px;
-    box-sizing: content-box;
-  }
-  
-  .cb-footer-widget-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-decoration: underline 3px;
-  }
-  
-  .blogroll {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .blogroll li a {
-    color: rgb(63, 92, 112);
-    text-decoration: none;
-    line-height: 2;
-  }
-  
-  .blogroll li a:hover {
-    text-decoration: underline;
-  }
-  
-  .textwidget {
-    margin-top: 15px;
-  }
-  
-  .textwidget img {
-    max-width: 100%;
-    height: auto;
-  }
+.socials .image{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.socials .image:hover{
+    color: white; 
+    background-color: #212529; 
+    transition: background-color 0.5s ease;
+}
+.socials .image:hover img{
+    filter: invert(1);
+    transition: filter 0.5s ease;
+}
+.socials .image-soundcloud{
+    width: 80px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.socials .image-soundcloud:hover{
+    color: white;
+    background-color: #212529;
+    transition: background-color 0.5s ease;
+}
+.socials .image-soundcloud:hover img{
+    filter: invert(1);
+    transition: filter 0.5s ease;
+}

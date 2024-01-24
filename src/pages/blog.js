@@ -1,24 +1,28 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
-import { graphql } from 'gatsby';
-import "./blog.css"
+import { graphql, Link } from 'gatsby';
+import "../styles/blog.css"
 
 const Article = ({ articles }) => {
   return (
     <main>
       {articles.map((article) => (
-        <div key={article.id}>
-          <h1>{article.title}</h1>
-          <h2>{article.author}</h2>
-          <h2>{article.datetime}</h2>
-          <img
-            src={article.image.url}
-            alt={article.title}
-            style={{ width: 300, height: 'auto' }}
-          />
-          <p>{article.content.content}</p>
-        </div>
+        <Link to={`/${article.url}`}>
+          <div class="article-container" key={article.id}>
+            <img
+              src={article.image.url}
+              alt={article.title}
+              style={{ width: 200, height: 'auto' }}
+            />
+            <div class="article-info"> {/*title author and date*/}
+              <h1 class="title">{article.title}</h1> 
+              <h2 class="author">{article.author}</h2>
+              <h2 class="date">{article.datetime}</h2>
+            </div>
+            <p class="article-content"> {article.content.content}</p>
+          </div>
+        </Link>
       ))
       }
     </main>
@@ -30,7 +34,7 @@ const Header = ({data}) => {
       <container>
         <Layout pageTitle="The Rotation"/>
         <div class ="articles">
-          <Article articles={articles}/>
+            <Article articles={articles}/>
         </div>
 
         {/* FOOTER */}

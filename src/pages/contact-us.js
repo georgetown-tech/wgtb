@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
-import "./contact.css"
-import Footer from "../components/footer"
+import "../styles/contact.css"
+import Footer from "../components/footer/footer.js"
 
 {/* <script src="https://smtpjs.com/v3/smtp.js"/>
 function sendEmail(){

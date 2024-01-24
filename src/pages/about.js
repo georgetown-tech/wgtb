@@ -2,7 +2,7 @@ import * as React from 'react'
 import Layout from "../components/header/layout"
 // Imports style sheet
 import "../styles/about.css"
-import Footer from "../components/footer"
+import Footer from "../components/footer/footer.js"
 
 
 // Creates the header for the page

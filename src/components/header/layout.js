@@ -6,35 +6,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div class="container">
-      <div class= "header">
+    <div className="container">
+      <div className="header">
         <Link to= "/">
-          <StaticImage src="../../images/headerLogo.png" class="headerImage" alt="header image"/>
+          <StaticImage src="../../images/headerLogo2.png" className="header-image" alt="header image"/>
         </Link>
-        <div class="subheader">
-          {/* <h1 class="page-title">{pageTitle}</h1> */}
-          <figure class = "audio-wrap">
-            <figcaption>Listen live:</figcaption>
-            <audio controls src="https://s4.radio.co/sbeba14c92/listen">
-            </audio>
-          </figure>
-          <div class= "socials">
-            <Link to= "https://www.facebook.com/georgetownradio">
-              <StaticImage src= "../../images/facebook.png" alt="Facebook" class="image"/>
-            </Link>
-            <Link to= "https://www.instagram.com/georgetownradio/">
-              <StaticImage src= "../../images/insta-logo.png" alt="Instagram" class="image"/>
-            </Link>
-            <Link to= "https://soundcloud.com/wgtb-rotation">
-              <StaticImage src= "../../images/soundcloud.png" alt="Soundcloud" class="image-soundcloud"/>
-            </Link>
-            <Link to= "https://twitter.com/wgtb">
-              <StaticImage src= "../../images/twitter.png" alt="X" class="image"/>
-            </Link>
-          </div>
-        </div>
       </div>
-        {children}
+        {/* {children} */}
       <nav>
         <Navbar/>
       </nav>

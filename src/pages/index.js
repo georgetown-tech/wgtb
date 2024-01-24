@@ -2,10 +2,11 @@ import * as React from 'react'
 //import Navbar from "../components/navbar/Navbar"
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
+import RadioPlayer from "../components/radio-player/radio-player.js"
 import ImageSlider from './homepage_slideshow/ImageSlider'; // Import the ImageSlider component
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import "./homepage.css"
+import "../styles/homepage.css"
 import Reviews from '../components/reviews/reviews';
 
 // Array of objects representing slides
@@ -43,6 +44,8 @@ const Homepage = () => {
     <div>
       <Layout pageTitle = "Georgetown Radio">
       </Layout>
+{/* FLOATING PLAYER BAR */}
+      <RadioPlayer/>
 {/* SLIDES */}
   <ImageSlider slides={slides} />
 {/* REVIEWS */}
@@ -51,19 +54,19 @@ const Homepage = () => {
 {/* PLAYLIST */}
       <h2>Spotify Playlists</h2>
       <section class="playlist-container">
-            <iframe class = "spotify-playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
+            <iframe class = "spotify-playlist" title ="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
             width="100%" height="380" allowfullscreen="" frameborder="0" allow="autoplay; 
             clipboard-write; encrypted-media; fullscreen; picture-in-picture">
             </iframe>
-            <iframe src="https://open.spotify.com/embed/playlist/3u0TgZsPMoL13M88FVlH0U?utm_source=generator&theme=0"
+            <iframe title ="spotify playlist" src="https://open.spotify.com/embed/playlist/3u0TgZsPMoL13M88FVlH0U?utm_source=generator&theme=0"
              width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
               clipboard-write; encrypted-media; fullscreen; picture-in-picture">
             </iframe>
-            <iframe src="https://open.spotify.com/embed/playlist/452Fl9XoT6gfNjv80IJoMF?utm_source=generator&theme=0"
+            <iframe title ="spotify playlist" src="https://open.spotify.com/embed/playlist/452Fl9XoT6gfNjv80IJoMF?utm_source=generator&theme=0"
              width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
               clipboard-write; encrypted-media; fullscreen; picture-in-picture">
             </iframe>
-            <iframe src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
+            <iframe title ="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; 
             clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       </section>

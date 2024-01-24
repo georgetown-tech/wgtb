@@ -1,13 +1,12 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import "../styles/about.css"
-import Footer from "../components/footer"
+import Footer from "../components/footer/footer.js" 
 
 const DjServicesPage = () => (
   <container>
   <Layout pageTitle="DJ Services"/>
     <div class="fullsection">
-    <h1>DJ Services</h1>
     <h2 class = "sectiontitle" >Sound Equipment Rentals/DJ Services</h2>
     <p>WGTB offers a full range of professional-quality technical services for events of all sizes. Student organizations have the opportunity to reserve our various equipment and request the services of our diverse and talented DJs. Just tell us the who, the what, the where, the when, and the why… we’re here to help you have a successful event and a great time.</p>
     <p>Here is a standard list of the services we offer. If you would like a more specific request, or just want more information, email Melissa Frazee at djservices@georgetownradio.com</p>

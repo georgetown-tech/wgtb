@@ -3,8 +3,8 @@ import * as React from 'react'
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "../components/header/layout"
 import GoogleSheetEmbed from '../components/schedule_sheet'
-import Footer from "../components/footer"
-import "./schedule.css"
+import Footer from "../components/footer/footer.js"
+import "../styles/schedule.css"
 
 const Header = () => {
   return(

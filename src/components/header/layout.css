@@ -1,55 +1,15 @@
 .container { /*container header and navbar*/
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
-    padding: 10px;
-    
+    /* padding: 10px; */
+    justify-content: center;
+    background-color: #EF95CF;
 } 
 .header{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.headerImage{
-    height: 100%;
-    margin: none;
-    padding: none;
-}
-  
-.subheader{ /*audio player and socials container */
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.audio-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-figcaption {
-font-family: 'Montserrat';
-margin: 5px;
-}
-
-
-.socials {
-display: flex;
-align-items: center;
-}
-  
-.socials .image{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin: 10px;
-}
-.socials .image-soundcloud {
-    width: 80px;
-    display: inline-block;
-    margin: 10px;
+    width: 60%;
 }
 nav{
     display: inline;
+    margin: 0;
+    padding: 0;
 }  

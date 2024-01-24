@@ -1,52 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Import a different font */
-
 .main-menu {
-  background-color: #F8F9FA; /* Change background color as needed */
-  padding: 10px 0px;
-  margin: none;
-  display: flex;
-  justify-content: center;
+  margin-top: 5px;
   width: 100vw;
+  font-family: 'Open Sans'
 }
-
 .navbar {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  gap: 10px;
 
+}
 .navbar li {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* min-width: 70px; */
   margin: none;
-  padding: 0px 10px;
+  padding: 0px 0px;
 }
-
+ 
 .navbar li a {
   text-decoration: none;
-  color: black; /* Change text color as needed */
+  color: #418FDE; 
   font-size: 15px;
-  font-weight: bold;
   transition: color 0.5s;
-  padding: 10px 30px; /* Adjust as needed */
+  padding: 12px 30px; 
   margin: none;
-  background-color: #F8F9FA; /* Change as needed */
-  border: 1px solid #343A40; /* Add border */
-  border-radius: 5px; /* Optional: to make the containers rounded */
-  font-family: 'Roboto', sans-serif; /* Change font */
+  background-color: none; 
+  border: none; 
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 .navbar a.active{
-  font-weight: bold; /* Or apply any other style you want for the active tab */
-  padding: 12px 35px;
-  background-color: #ADB5BD;
+  font-weight: bold;
+  padding: 12px 30px;
+  background-color: #E75FBB;
 }
 
 .navbar li a:hover {
-  color: white; /* Change hover color as needed */
-  background-color: #212529; /* Change hover background color */
+  background-color: #E75FBB;
 }

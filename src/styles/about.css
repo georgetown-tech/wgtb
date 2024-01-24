@@ -1,25 +1,25 @@
 .fullsection {
     width: 80%;
     padding: 2% 10%;
+    font-family: 'Open Sans';
 }
 
 .sectiontitle {
     border-bottom-width: 3px;
     border-bottom-style: solid;
-    border-color: blue;
+    border-color: #418fde;
     padding: 0 10px 5px 0;
     font-size: 20px;
     text-transform: uppercase;
     margin: 0 0 20px 0;
     width: 100%;
+    font-family: 'PT Serif', serif;
+}
+.fullsection ul{
+    margin-left: 40px;
 }
 
-.q {
+.q{
     font-weight: bold;
     color: #292929;
-}
-
-a {
-    text-decoration: none;
-    color: #f01f1f;
 }

@@ -7,25 +7,25 @@ const Navbar = () => {
     <div className="main-menu">
       <ul className="navbar">
       <li>
-          <Link to="/" activeClassName="active">Home</Link>
+          <Link to="/" activeClassName="active">home</Link>
         </li>
         <li>
-          <Link to="/blog" activeClassName="active">The Rotation</Link>
+          <Link to="/blog" activeClassName="active">the rotation</Link>
         </li>
         <li>
-          <Link to="/shows" activeClassName="active">Shows</Link>
+          <Link to="/shows" activeClassName="active">shows</Link>
         </li>
         <li>
-          <Link to="/schedule" activeClassName="active">Schedule</Link>
+          <Link to="/schedule" activeClassName="active">schedule</Link>
         </li>
         <li>
-          <Link to="/dj-services" activeClassName="active">Dj Services</Link>
+          <Link to="/dj-services" activeClassName="active">dj services</Link>
         </li>
         <li>
-          <Link to="/contact-us" activeClassName="active">Contact Us</Link>
+          <Link to="/contact-us" activeClassName="active">contact us</Link>
         </li>
         <li>
-          <Link to="/about" activeClassName="active">About</Link>
+          <Link to="/about" activeClassName="active">about</Link>
         </li>
       </ul>
     </div>
