@@ -1,38 +1,74 @@
-/* styling for homepage */
 /*  Original color palette: https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
 /* WGTB recommended color palette: https://coolors.co/418fde-ef95cf-ffa51f-b07bbf-ff914d-016d39 */ 
-h2{
-    font-family: 'Montserrat';
-    color: #212529;
+.homepage-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #576490; */
 }
-
-
+.section-header {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: #418fde;
+    padding: 0 10px 5px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    width: 80%;
+    font-family: 'PT Serif', serif;
+    color: #292929;
+}
 .playlist-container{
-    background-color: #333;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #FADCEF; */
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
     margin: 10px 0px;
-    border-radius: 10px;
 }
-
-.playlist-container StaticImage {
-    width: 100%; /* Make the image fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 380px; /* Limit the maximum width of the image */
-    max-height: 380px; /* Limit the maximum height of the image */
+.playlists{
+    display: flex;
+    flex-direction: column;
 }
-.playlist-container iframe{
-    width: 100%; /* Make the image fill the container width */
-    height: 500px; /* Maintain aspect ratio */
-    max-width: 380px; /* Limit the maximum width of the image */
-    max-height: 380px; /* Limit the maximum height of the image */
+.spotify-playlist{
+    margin-bottom: 10px
 }
-
-/* styling for headings within each link */
-.playlist-container h3 {
-margin-top: 10px; /* Adjust the margin as needed */
-font-size: 16px; /* Adjust the font size as needed */
-color: #fff; /* Text color */
-text-align: center; /* Center the text */
+.playlists iframe{
+    width: 100%;
+    height: 500px;
+    max-width: 380px;
+    max-height: 380px;
+    border: none;
+}
+.reviews{
+    display: block;
+}
+.review{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 20px 0px;
+}
+.review img{
+    height: auto;
+    min-width: 40%;
+}
+.review h3{
+    text-align: center;
+    margin: 5px auto;
+}
+.review-text{
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    max-width: 60%;
+    margin: 0px 10px;
+}
+.review-text h3{
+    font-weight: bold;
 }

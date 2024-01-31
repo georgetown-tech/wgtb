@@ -1,13 +1,15 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import "../styles/about.css"
-import Footer from "../components/footer/footer.js" 
+import Footer from "../components/footer/footer.js"
+import RadioPlayer from '../components/radio-player/radio-player.js'; 
 
 const DjServicesPage = () => (
   <container>
   <Layout pageTitle="DJ Services"/>
+  <RadioPlayer/>
     <div class="fullsection">
-    <h2 class = "sectiontitle" >Sound Equipment Rentals/DJ Services</h2>
+    <h2 class = "section-header" >Sound Equipment Rentals/DJ Services</h2>
     <p>WGTB offers a full range of professional-quality technical services for events of all sizes. Student organizations have the opportunity to reserve our various equipment and request the services of our diverse and talented DJs. Just tell us the who, the what, the where, the when, and the why… we’re here to help you have a successful event and a great time.</p>
     <p>Here is a standard list of the services we offer. If you would like a more specific request, or just want more information, email Melissa Frazee at djservices@georgetownradio.com</p>
     <ul>
@@ -19,7 +21,7 @@ const DjServicesPage = () => (
     <p>Our equipment includes, but is not limited to: large tower speakers, mixing boards, pre-amps, microphones, mic stands, monitors, and any cable you could ever need.</p>
     <p>Oh and we do it all for the cheapest prices you’ll find anywhere!</p>
     <p>Please fill out this form to help us help you have a successful event.  To ensure availability of the equipment please give us two weeks notice.</p>
-    <h2 class="sectiontitle">Concerts</h2>
+    <h2 class="section-header">Concerts</h2>
     <p>One of the most exciting adventures WGTB has embarked on is concert hosting. We'll host anyone from a student band to that buzz band you missed at the Black Cat.</p>
     <p>In the past, we've hosted artists such as:</p>
     <ul>
@@ -53,7 +55,7 @@ const DjServicesPage = () => (
       <li>Sidney Gish</li>
       <li>MICHELLE</li>
     </ul>
-    <h2 class="sectiontitle">In-Studio Interviews and Performances</h2>
+    <h2 class="section-header">In-Studio Interviews and Performances</h2>
     <p>Playing a DC gig and want to use your down time before the show to gain some publicity? We’d love to chat with you on air and host an acoustic performance in the studio!</p>
     <p>In the past, we've hosted artists such as:</p>
     <ul>

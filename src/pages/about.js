@@ -3,6 +3,7 @@ import Layout from "../components/header/layout"
 // Imports style sheet
 import "../styles/about.css"
 import Footer from "../components/footer/footer.js"
+import RadioPlayer from '../components/radio-player/radio-player.js';
 
 
 // Creates the header for the page
@@ -11,6 +12,7 @@ const About = () => {
     <container>
       {/* Place HTML code in this container */}
       <Layout pageTitle="About Us" />
+      <RadioPlayer/>
 
       <div class="fullsection">
 
@@ -28,14 +30,14 @@ const About = () => {
         </center>
         <br /><br />
 
-        <h2 class="sectiontitle">Club Overview</h2>
+        <h2 class="section-header">Club Overview</h2>
         <div class="overview">
           <p>
             WGTB is Georgetown University’s student-run, internet-streaming campus radio station, serving as Georgetown’s central source for music news, reviews, events, and community as well as broadcasting talk, sports, news, and music. Our mission is to be an integral part of the Georgetown undergraduate experience and the Washington community, providing a forum for students to broadcast, to discover new music and communicate ideas and opinions, and to enjoy live music. We manage this through on-air programming, The Rotation, and major events and concerts. In recent years, WGTB has hosted artists such as: Slowthai, Faye Webster, Snailmail, Girl Talk, Best Coast, Dan Deacon, The Hood Internet, Real Estate, Reptar, Das Racist, US Royalty, ZZ Ward, Kids These Days, twenty|one|pilots, and Nick Waterhouse.
           </p>
         </div>
 
-        <h2 class="sectiontitle">History</h2>
+        <h2 class="section-header">History</h2>
         <div class="history">
           <p>
             WGTB was founded as the Georgetown Broadcasting System in 1946 by Rev. Francis Hayden, S.J. In its earliest incarnation, the station was primarily an outlet for news and public affairs programming. The station developed “The Georgetown Forum” during the 1950s which became famous for hosting notable public figures and scholars to discuss the topics of the day. At that time, the studio was located in Healy Hall, and it would often receive complaints from the physics department, also located at the time in Healy Hall, that radio waves coming from the studio were interfering with their instruments.
@@ -48,7 +50,7 @@ const About = () => {
           </p>
         </div>
 
-        <h2 class="sectiontitle">Q&A</h2>
+        <h2 class="section-header">Q&A</h2>
         <div class="qa">
           <p class="q">
             Q: So, what is WGTB now?

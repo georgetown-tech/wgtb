@@ -2,11 +2,13 @@ import React from "react";
 import {Link} from "gatsby";
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
+import RadioPlayer from '../components/radio-player/radio-player.js';
 
 const Shows = () => {
   return (
     <container>
       <Layout pageTitle="Shows"/>
+      <RadioPlayer/>
       <div>
         <ul className="Navbar">
           <li>

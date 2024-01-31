@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
+import RadioPlayer from '../components/radio-player/radio-player.js';
 import { graphql, Link } from 'gatsby';
 import "../styles/blog.css"
 
@@ -28,11 +29,12 @@ const Article = ({ articles }) => {
     </main>
 )};
 
-const Header = ({data}) => {
+const Blog = ({data}) => {
   const articles = data.allContentfulArticle.nodes;
   return(
       <container>
         <Layout pageTitle="The Rotation"/>
+        <RadioPlayer/>
         <div class ="articles">
             <Article articles={articles}/>
         </div>
@@ -48,7 +50,8 @@ const Header = ({data}) => {
 
 export const Head = () => <title>Home Page</title>
 
-export const query = graphql`
+// Note: useStaticQuery can be exported and reused around site
+export const useStaticQuery = graphql`
 query {
   allContentfulArticle {
     nodes {
@@ -67,4 +70,4 @@ query {
 }
 `;
 
-export default Header
+export default Blog

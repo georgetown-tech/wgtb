@@ -1,20 +1,23 @@
 import * as React from 'react'
-// import Navbar from '../../components/navbar/Navbar';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "../components/header/layout"
-import GoogleSheetEmbed from '../components/schedule_sheet'
 import Footer from "../components/footer/footer.js"
 import "../styles/schedule.css"
+import RadioPlayer from '../components/radio-player/radio-player.js';
 
-const Header = () => {
+const Schedule = () => {
   return(
       <container>
         <Layout pageTitle="Schedule"></Layout>
-        <div class = "header-wrap">
-          <h2>Check out our latest schedule to stay in the loop with our fantastic on-air hosts and talented artists!</h2>
+        <RadioPlayer/>
+        <div className="sheet-container">
+          <div class = "header-wrap">
+            <h2 className="schedule-header">Check out our latest schedule to stay in the loop with our fantastic on-air hosts and talented artists!</h2>
+          </div>
+          <iframe title="Google Sheet Embed" className="sheet"
+          src="https://docs.google.com/spreadsheets/d/1UU-dhZu0D0RkqyRYkIzQMVXrjiE8UfNwBCJc5xevrGM/edit?rm=minimal"
+          allowFullScreen
+          ></iframe>
         </div>
-        <GoogleSheetEmbed />
-        {/* FOOTER */}
         <footer>
           <Footer>
           </Footer>
@@ -27,4 +30,4 @@ const Header = () => {
 export const Head = () => <title>Home Page</title>
 
 // Step 3: Export your component
-export default Header
+export default Schedule

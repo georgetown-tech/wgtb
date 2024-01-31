@@ -1,4 +1,4 @@
-.radio-player-wrap{
+.radioPlayerWrap{
     background-color: #EF95CF;
     bottom: 0;
     left: 0;
@@ -13,14 +13,14 @@
     z-index: 1;
 }
 
-.radio-image{
+.radioImage{
     width: 45px;
     height: 45px;
     border-radius: 5px;
     margin: 0;
 }
 
-.audio-caption{
+.audioCaption{
     font-family: 'PT Serif', serif;
     font-size: larger;
 }

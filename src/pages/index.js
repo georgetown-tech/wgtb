@@ -1,9 +1,8 @@
 import * as React from 'react'
-//import Navbar from "../components/navbar/Navbar"
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
 import RadioPlayer from "../components/radio-player/radio-player.js"
-import ImageSlider from './homepage_slideshow/ImageSlider'; // Import the ImageSlider component
+import ImageSlider from './homepage_slideshow/ImageSlider'; 
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import "../styles/homepage.css"
@@ -37,8 +36,6 @@ const slides = [
   },
 ];
 
-
-
 const Homepage = () => {
   return(
     <div>
@@ -46,59 +43,86 @@ const Homepage = () => {
       </Layout>
 {/* FLOATING PLAYER BAR */}
       <RadioPlayer/>
+      <div className="homepage-wrap">
 {/* SLIDES */}
-  <ImageSlider slides={slides} />
-{/* REVIEWS */}
+        <ImageSlider slides={slides} />
+{/* REVIEWS
     <Reviews>
-    </Reviews>
+    </Reviews> */}
 {/* PLAYLIST */}
-      <h2>Spotify Playlists</h2>
-      <section class="playlist-container">
-            <iframe class = "spotify-playlist" title ="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
-            width="100%" height="380" allowfullscreen="" frameborder="0" allow="autoplay; 
-            clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <iframe title ="spotify playlist" src="https://open.spotify.com/embed/playlist/3u0TgZsPMoL13M88FVlH0U?utm_source=generator&theme=0"
-             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
-              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <iframe title ="spotify playlist" src="https://open.spotify.com/embed/playlist/452Fl9XoT6gfNjv80IJoMF?utm_source=generator&theme=0"
-             width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay;
-              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <iframe title ="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
-            width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; 
-            clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </section>
-      <h2>Playlists + Reviews</h2>
-      <section class= "playlist-container">
-            <Link>
+        
+        <section className="playlist-container">
+          <div className="reviews">
+            <h2 className="section-header">Playlists + Reviews</h2>
+            <Link className="review">
               <StaticImage
                 src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/09/fiona-apples-and-oranges.png?resize=380%2C380"
                 alt=""/>
-              <h3>
-                FA&#038;O: Fall Rotation Recommendations
-              </h3>
+              <div className="review-text">
+                <h3>
+                  FA&#038;O: Fall Rotation Recommendations
+                </h3>
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
             </Link>
-              <Link>
-                <StaticImage
-                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-2.55.23-PM.png?resize=380%2C380"
-                  alt=""
-                />
-              <h3>
-                Preview + Playlist: MICHELLE and Sidney Gish @ BDA
-              </h3>
+            <Link className="review">
+              <StaticImage
+                src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-2.55.23-PM.png?resize=380%2C380"
+                alt=""
+              />
+              <div className="review-text">
+                <h3>
+                  Preview + Playlist: MICHELLE and Sidney Gish @ BDA
+                </h3>
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
             </Link>
-              <Link>
-                <StaticImage
-                  src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/01/4641-1.jpeg?resize=380%2C380"
-                  alt=""
-                />
-              <h3>
-              Playlist: Honeymoon in Paris
-              </h3>
+            <Link className="review">
+              <StaticImage
+                src="https://i0.wp.com/georgetownradio.com/wp/wp-content/uploads/2022/01/4641-1.jpeg?resize=380%2C380"
+                alt=""
+              />
+              <div className="review-text">
+                <h3>
+                Playlist: Honeymoon in Paris
+                </h3>
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
             </Link>
-      </section>
+          </div>
+          <div className="playlists">
+          <h2 className="section-header">Spotify Playlists</h2>
+            <iframe className="spotify-playlist" title="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
+            width="100%" height="380" allowfullscreen="" allow="autoplay; 
+            clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe className="spotify-playlist" title ="spotify playlist" src="https://open.spotify.com/embed/playlist/3u0TgZsPMoL13M88FVlH0U?utm_source=generator&theme=0"
+            width="100%" height="380" allowfullscreen="" allow="autoplay;
+              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe className="spotify-playlist" title ="spotify playlist" src="https://open.spotify.com/embed/playlist/452Fl9XoT6gfNjv80IJoMF?utm_source=generator&theme=0"
+            width="100%" height="380" allowfullscreen="" allow="autoplay;
+              clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe  className="spotify-playlist" title ="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
+            width="100%" height="380" allowfullscreen="" allow="autoplay; 
+            clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+          </div>
+        </section>
+      </div>
     {/* FOOTER */}
       <footer>
         <Footer>

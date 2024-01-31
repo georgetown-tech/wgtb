@@ -4,7 +4,7 @@
     font-family: 'Open Sans';
 }
 
-.sectiontitle {
+.section-header {
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-color: #418fde;
@@ -14,12 +14,14 @@
     margin: 0 0 20px 0;
     width: 100%;
     font-family: 'PT Serif', serif;
+    color: #292929;
 }
 .fullsection ul{
     margin-left: 40px;
 }
 
 .q{
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'PT Serif', serif;
     color: #292929;
 }
