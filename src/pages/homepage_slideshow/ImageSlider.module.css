@@ -1,0 +1,75 @@
+.carouselArticles {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  max-width: 650px;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.slideNavigation {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  background-color: #86B8EA;
+  color: #fff;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.indicator {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #418fde;
+}
+
+.articleContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.articleImage{
+  height: 90%;
+}
+.articleContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  color:#292929;
+  border: none;
+}
+.articleTitle{
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  margin: 5px;
+}
+.articleAuthor{
+  font-family: 'PT Serif', serif;
+  margin-bottom: 10px;
+}

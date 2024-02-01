@@ -1,33 +1,27 @@
-// ImageSlider.js
 import React, { useState } from 'react';
-import './ImageSlider.css'; // Make sure to create an ImageSlider.css file for styling
 import { graphql, Link, useStaticQuery } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
+import { motion, AnimatePresence } from "framer-motion";
+import * as styles from './ImageSlider.module.css';
 
-const Preview = ({ previews }) => {
+const Preview = ({ previewData }) => {
   return (
-    <main>
-      {previews.map((preview) => (
-        <Link to={`/${preview.url}`}>
-          <div className="slide-container" key={preview.id}>
-            <img
-              src={preview.image.url}
-              alt={preview.title}
-              style={{ width: 200, height: 'auto' }}
+        <Link to={`/${previewData.url}`}>
+          <div className={styles.articleContainer} key={previewData.id}>
+            <img className={styles.articleImage}
+              src={previewData.image.url}
+              alt={previewData.title}
             />
-            <div className="preview-info"> {/*title author and date*/}
-              <h1 className="title">{preview.title}</h1> 
-              <h2 className="author">{preview.author}</h2>
+            <div className={styles.articleContent}> {/*title author and date*/}
+              <h1 className={styles.articleTitle}>{previewData.title}</h1> 
+              <h2 className={styles.articleAuthor}>{previewData.author}</h2>
+              <p className="preview-content"> {previewData.content.content}</p>
             </div>
-            <p className="preview-content"> {preview.content.content}</p>
           </div>
         </Link>
-      ))
-      }
-    </main>
 )};
 
-const ImageSlides = () => {
+const Carousel = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulArticle {
@@ -35,6 +29,7 @@ const ImageSlides = () => {
           title
           author
           datetime
+          url
           image {
             url
           }
@@ -46,66 +41,70 @@ const ImageSlides = () => {
     }
   `);
 
-  const previews = data.allContentfulArticle.nodes;
+  const previews = data.allContentfulArticle.nodes; //array of articles
 
-  return(
-    <div className ="articles">
-      <Preview previews={previews}/>
-    </div>
-  )
-}
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-
-const ImageSlider = ({ slides }) => {
-  // const [current, setCurrentIndex] = useState(0);
-  // const length = slides.length;
-
-  // const nextSlide = () => {
-  //   setCurrentIndex(current === length - 1 ? 0 : current + 1);
-  // }; 
-
-  // const prevSlide = () => {
-  //   setCurrentIndex(current === 0 ? length - 1 : current - 1);
-  // };
-
-  // if (!Array.isArray(slides) || slides.length <= 0) {
-  //   return null; // If there are no slides, don't render the component
-  // }
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 === previews.length ? 0 : prevIndex + 1
+    );
+  };
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 1 < 0 ? previews.length - 1 : prevIndex - 1
+    );
+  };
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
-    <div className='slider'>
-      
-      <ImageSlides/>
-
-
-
-      {/* <button className='left-arrow' onClick={prevSlide}>
-        &lt;
-      </button>
-      <button className='right-arrow' onClick={nextSlide}>
-        &gt;
-      </button>
-       {slides.map((slide, index) => (
-        <div className={index === current ? 'slide active' : 'slide'} key={index}>
-          {index === current && (
-            <>
-              <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                <img src={slide.imageSrc} alt={slide.title} className='image' />
-              </a>
-              <div className="slide-caption">
-                <h2>{slide.title}</h2>
-                <p className="slide-text">{slide.description}</p>
-                <p>read more </p>
-              </div>
-            </>
-          )}
+    <div className={styles.carousel}>
+      <motion.div className={styles.carouselArticles}
+        key={currentIndex}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Preview previewData={previews[currentIndex]}/>
+      </motion.div>
+      <div className={styles.slideNavigation}>
+        <div className={styles.left} onClick={handlePrevious}>
+          <svg //left arrow svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            viewBox="0 96 960 960"
+            width="20"
+          >
+            <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
+          </svg>
         </div>
-      ))} */}
+        <div className={styles.right} onClick={handleNext}>
+          <svg //right arrow svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            viewBox="0 96 960 960"
+            width="20"
+          >
+            <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
+          </svg>
+        </div>
+      </div>
+      <div className={styles.indicator}> {/* dots below slider */}
+        {previews.map((_, index) => (
+          <div 
+            key={index}
+            className={`${styles.dot} ${currentIndex === index ? styles.active : ""}`}
+            onClick={() => handleDotClick(index)}
+          ></div>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
-export default ImageSlider;
+export default Carousel;
 
 
 
