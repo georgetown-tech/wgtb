@@ -2,7 +2,7 @@ import * as React from 'react'
 import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
 import RadioPlayer from "../components/radio-player/radio-player.js"
-import Carousel from './homepage_slideshow/ImageSlider'; 
+import Carousel from '../components/articleSlider/ImageSlider.js'; 
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby'
 import "../styles/homepage.css"
@@ -19,9 +19,9 @@ const Homepage = () => {
       <div className="homepage-wrap">
 
 {/* article carousel */}
-        <div className="carouselContainer">
-          <Carousel/>
-        </div>
+      <div className="carousel-wrap">
+        <Carousel/>
+      </div>
 
 {/* playlists and reviews */}
         <section className="playlist-container">
@@ -76,7 +76,7 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="playlists">
-          <h2 className="section-header">Spotify Playlists</h2>
+          <h2 className="section-header">Spotify</h2>
             <iframe className="spotify-playlist" title="spotify playlist" src="https://open.spotify.com/embed/playlist/4cgpqcGNpjb3rK39pBnkdI?utm_source=generator&theme=0" 
             width="100%" height="380" allowfullscreen="" allow="autoplay; 
             clipboard-write; encrypted-media; fullscreen; picture-in-picture">

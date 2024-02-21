@@ -3,25 +3,28 @@ import Layout from "../components/header/layout"
 import Footer from "../components/footer/footer.js"
 import RadioPlayer from '../components/radio-player/radio-player.js';
 import { graphql, Link } from 'gatsby';
-import "../styles/blog.css"
+import * as styles from "../styles/blog.module.css"
 
 const Article = ({ articles }) => {
   return (
     <main>
       {articles.map((article) => (
-        <Link to={`/${article.url}`}>
-          <div class="article-container" key={article.id}>
-            <img
-              src={article.image.url}
-              alt={article.title}
-              style={{ width: 200, height: 'auto' }}
-            />
-            <div class="article-info"> {/*title author and date*/}
-              <h1 class="title">{article.title}</h1> 
-              <h2 class="author">{article.author}</h2>
-              <h2 class="date">{article.datetime}</h2>
+        <Link className = {styles.articleLink} to={`/${article.url}`}>
+          <div className={styles.articleContainer} key={article.id}>
+            <div className={styles.articleImageContainer}>
+              <img className={styles.articleImage}
+                src={article.image.url}
+                alt={article.title}
+              />
             </div>
-            <p class="article-content"> {article.content.content}</p>
+            <div className={styles.articleContent}>
+              <div className={styles.articleInfo}> {/*title author and date*/}
+                <h1 className={styles.articleTitle}>{article.title}</h1> 
+                <h2>{article.author}</h2>
+                <h2>{article.datetime}</h2>
+              </div>
+              <p className={styles.articlePreview}> {article.preview.preview}</p>
+            </div>
           </div>
         </Link>
       ))
@@ -62,8 +65,8 @@ query {
       image{
         url
       }
-      content {
-        content
+      preview {
+        preview
       }
     }
   }

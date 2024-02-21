@@ -3,10 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #EF95CF;
+    background-color: #BAD6F3;
 } 
 .header{
-    width: 60%;
+    width: 30%;
+}
+.header-subtext{
+    font-family: 'PT Serif', serif;
+    font-size: 2em;
 }
 nav{
     display: inline;

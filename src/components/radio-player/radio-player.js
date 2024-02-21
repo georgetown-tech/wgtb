@@ -1,10 +1,11 @@
 import * as React from 'react'
 import * as styles from "./radio-player.module.css"
+import { StaticImage } from 'gatsby-plugin-image';
 
 const RadioPlayer = () => {
     return(
         <div className={styles.radioPlayerWrap}>
-            <img className={styles.radioImage} src="https://i0.wp.com/georgetownradio.com/wp/wp-content/themes/Ciola-child/img/footer-logo.png?w=600" alt="WGTB logo"></img>
+            <StaticImage className={styles.radioImage} src="../../images/wgtbLogoBlack.png" alt="WGTB logo"/>
             <figcaption className = {styles.audioCaption}>Georgetown Radio</figcaption>
             <audio className={styles.audioPlayer} controls src="https://s4.radio.co/sbeba14c92/listen"></audio>
         </div>

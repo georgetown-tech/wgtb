@@ -21,7 +21,7 @@
  
 .navbar li a {
   text-decoration: none;
-  color: #418FDE; 
+  color: #151515; 
   font-size: 15px;
   transition: color 0.5s;
   padding: 12px 30px; 
@@ -32,11 +32,18 @@
   font-family: 'Roboto', sans-serif;
 }
 .navbar a.active {
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 12px 30px;
-  background-color: #E75FBB;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #2F82DA;
+  text-underline-offset: 0.3em;
+  /* background-color: #2F82DA; */
 }
 
 .navbar li a:hover {
-  background-color: #E75FBB;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #2F82DA;
+  text-underline-offset: 0.3em;
 }

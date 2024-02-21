@@ -1,5 +1,5 @@
 .radioPlayerWrap{
-    background-color: #EF95CF;
+    background-color: #B8B8B8;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -14,8 +14,8 @@
 }
 
 .radioImage{
-    width: 45px;
-    height: 45px;
+    width: 100px;
+    height: auto;
     border-radius: 5px;
     margin: 0;
 }
@@ -25,10 +25,10 @@
     font-size: larger;
 }
 audio::-webkit-media-controls-panel{
-    background-color: #EF95CF;
+    background-color: #B8B8B8;
 }
 audio::-webkit-media-controls-play-button{
-    background-color: #EF95CF;
+    background-color: #B8B8B8;
 }
 audio::-webkit-media-controls-play-button:hover {
     transform: scale(1.2);

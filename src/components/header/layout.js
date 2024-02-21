@@ -9,9 +9,10 @@ const Layout = () => {
     <div className="container">
       <div className="header">
         <Link to= "/">
-          <StaticImage src="../../images/headerLogo2.png" className="header-image" alt="header image"/>
+          <StaticImage src="../../images/wgtbLogoBlack.png" className="header-image" alt="wgtb header"/>
         </Link>
       </div>
+      <h1 className="header-subtext">Welcome to Georgetown Radio</h1>
       <nav>
         <Navbar/>
       </nav>

@@ -19,6 +19,9 @@
     font-family: 'PT Serif', serif;
     color: #292929;
 }
+.carousel-wrap{
+    max-width: 80%;
+}
 .playlist-container{
     width: 90%;
     display: grid;

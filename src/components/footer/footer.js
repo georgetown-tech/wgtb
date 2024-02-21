@@ -96,7 +96,7 @@ const Footer = () => {
                         </p>
                         {/* <p> Copyright (c)2009</p> */}
                     </div>
-                    <img class= "footer-logo" src="https://i0.wp.com/georgetownradio.com/wp/wp-content/themes/Ciola-child/img/footer-logo.png?w=600" alt= "footer logo"/>
+                    <StaticImage class= "footer-logo" src="../../images/wgtbLogoBlack.png" alt= "footer logo"/>
             </div>
         </div>
         <hr class="spacing"></hr>
