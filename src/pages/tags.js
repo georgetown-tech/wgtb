@@ -2,13 +2,18 @@ import * as React from "react";
 import Layout from "../components/header/layout";
 import Footer from "../components/footer/footer.js";
 import RadioPlayer from "../components/radio-player/radio-player.js";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import * as styles from "../styles/blog.module.css";
 
-const Article = ({ articles }) => {
+const tagPage = ({ pageContext }) => {
+  const { tagName, tagArticles } = pageContext;
+
   return (
-    <main>
-      {articles.map((article) => (
+    <div>
+      <Layout />
+      <RadioPlayer />
+      <button>Tag: {tagName}</button>
+      {tagArticles.map((article) => (
         <Link className={styles.articleLink} to={`/${article.url}`}>
           <div className={styles.articleContainer} key={article.id}>
             <div className={styles.articleImageContainer}>
@@ -34,48 +39,9 @@ const Article = ({ articles }) => {
           </div>
         </Link>
       ))}
-    </main>
+      <Footer />
+    </div>
   );
 };
 
-const Blog = ({ data }) => {
-  const articles = data.allContentfulArticle.nodes;
-  return (
-    <container>
-      <Layout pageTitle="The Rotation" />
-      <RadioPlayer />
-      <div class="articles">
-        <Article articles={articles} />
-      </div>
-
-      {/* FOOTER */}
-      <footer>
-        <Footer></Footer>
-      </footer>
-    </container>
-  );
-};
-
-export const Head = () => <title>Home Page</title>;
-
-// Note: useStaticQuery can be exported and reused around site
-export const useStaticQuery = graphql`
-  query {
-    allContentfulArticle {
-      nodes {
-        url
-        title
-        author
-        datetime
-        image {
-          url
-        }
-        preview {
-          preview
-        }
-      }
-    }
-  }
-`;
-
-export default Blog;
+export default tagPage;
