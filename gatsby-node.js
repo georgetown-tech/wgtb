@@ -67,4 +67,27 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     });
   });
+
+  // Group articles by author
+  const articlesByAuthor = {};
+  articles.forEach((article) => {
+    const authorName = article.author;
+    if (!articlesByAuthor[authorName]) {
+      articlesByAuthor[authorName] = [];
+    }
+    articlesByAuthor[authorName].push(article);
+  });
+
+  // Create pages for each author
+  Object.keys(articlesByAuthor).forEach((authorName) => {
+    const authorArticles = articlesByAuthor[authorName];
+    createPage({
+      path: `/authors/${authorName}`, // URL path for the page
+      component: require.resolve("./src/pages/authors.js"), // Component to use for rendering the page
+      context: {
+        authorName,
+        authorArticles,
+      },
+    });
+  });
 };
