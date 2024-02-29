@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  font-family: "Open Sans";
+  align-items: baseline;
+  justify-content: center;
+}
+.tag {
+  background-color: #bad6f3;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  color: #151515;
+  text-decoration: none;
+}
+.active {
+  background-color: #2f82da;
+  /* border-radius: 10px; */
+}

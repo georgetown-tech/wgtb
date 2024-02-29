@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/header/layout";
 import Footer from "../components/footer/footer.js";
 import RadioPlayer from "../components/radio-player/radio-player.js";
+import TagButtons from "../components/tagButtons/tagButtons.js";
 import { graphql, Link } from "gatsby";
 import * as styles from "../styles/blog.module.css";
 
@@ -40,10 +41,13 @@ const Article = ({ articles }) => {
 
 const Blog = ({ data }) => {
   const articles = data.allContentfulArticle.nodes;
+
   return (
     <container>
       <Layout pageTitle="The Rotation" />
+      <TagButtons />
       <RadioPlayer />
+
       <div class="articles">
         <Article articles={articles} />
       </div>

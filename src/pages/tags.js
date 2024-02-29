@@ -2,17 +2,19 @@ import * as React from "react";
 import Layout from "../components/header/layout";
 import Footer from "../components/footer/footer.js";
 import RadioPlayer from "../components/radio-player/radio-player.js";
+import TagButtons from "../components/tagButtons/tagButtons.js";
 import { Link } from "gatsby";
 import * as styles from "../styles/blog.module.css";
 
 const tagPage = ({ pageContext }) => {
-  const { tagName, tagArticles } = pageContext;
+  const { tagArticles } = pageContext;
 
   return (
     <div>
       <Layout />
       <RadioPlayer />
-      <button>Tag: {tagName}</button>
+      <TagButtons />
+
       {tagArticles.map((article) => (
         <Link className={styles.articleLink} to={`/${article.url}`}>
           <div className={styles.articleContainer} key={article.id}>
