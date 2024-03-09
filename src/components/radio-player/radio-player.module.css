@@ -1,36 +1,36 @@
-.radioPlayerWrap{
-    background-color: #B8B8B8;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0px 20px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+.radioPlayerWrap {
+  background-color: #525252;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
-.radioImage{
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-    margin: 0;
+.radioImage {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0;
 }
 
-.audioCaption{
-    font-family: 'PT Serif', serif;
-    font-size: larger;
+.audioCaption {
+  font-family: "PT Serif", serif;
+  font-size: larger;
 }
-audio::-webkit-media-controls-panel{
-    background-color: #B8B8B8;
+audio::-webkit-media-controls-panel {
+  background-color: #525252;
 }
-audio::-webkit-media-controls-play-button{
-    background-color: #B8B8B8;
+audio::-webkit-media-controls-play-button {
+  background-color: #525252;
 }
 audio::-webkit-media-controls-play-button:hover {
-    transform: scale(1.2);
-    transition: transform ease 0.5s;
+  transform: scale(1.2);
+  transition: transform ease 0.5s;
 }

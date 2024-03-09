@@ -1,0 +1,51 @@
+/* @import url(./global.css); */
+
+.articleContainer {
+  margin: 50px 150px;
+  display: flex;
+}
+.articleLink {
+  text-decoration: none;
+}
+.articleInfo {
+  margin: 5px 20px;
+  font-size: 1em;
+  font-family: "PT Serif", serif;
+}
+.articleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #212529;
+  text-align: center;
+}
+.articleImageContainer {
+  flex: 0 0 auto;
+}
+.articleImage {
+  height: 300px;
+  object-fit: cover;
+}
+.articleTitle {
+  font-size: 1.5em;
+  color: black;
+  /* font-family: 'PT Serif', serif; */
+}
+.articlePreview {
+  font-family: "Open Sans";
+}
+.authorProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.authorPhoto {
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+}
+.authorBio {
+  margin: 15px 60px;
+}

@@ -3,15 +3,27 @@ import Layout from "../components/header/layout";
 import Footer from "../components/footer/footer.js";
 import RadioPlayer from "../components/radio-player/radio-player.js";
 import { Link } from "gatsby";
-import * as styles from "../styles/blog.module.css";
+import * as styles from "../styles/authors.module.css";
+//import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const authorPage = ({ pageContext }) => {
-  const { authorArticles } = pageContext;
+  const { authorArticles, authorProfile } = pageContext;
 
   return (
     <div>
       <Layout />
       <RadioPlayer />
+      {authorProfile && (
+        <div className={styles.authorProfile}>
+          <img
+            className={styles.authorPhoto}
+            src={authorProfile.photo.url}
+            alt={authorProfile.name}
+          />
+          <h2>{authorProfile.name}</h2>
+          <p className={styles.authorBio}>{authorProfile.bio.bio}</p>
+        </div>
+      )}
 
       {authorArticles &&
         authorArticles.length > 0 &&
@@ -29,9 +41,9 @@ const authorPage = ({ pageContext }) => {
                 <div className={styles.articleInfo}>
                   {" "}
                   {/*title author and date*/}
-                  <h1 className={styles.articleTitle}>{article.title}</h1>
-                  <h2>{article.author}</h2>
-                  <h2>{article.datetime}</h2>
+                  <h2 className={styles.articleTitle}>{article.title}</h2>
+                  <h3>{article.author}</h3>
+                  <h3>{article.datetime}</h3>
                 </div>
                 <p className={styles.articlePreview}>
                   {" "}

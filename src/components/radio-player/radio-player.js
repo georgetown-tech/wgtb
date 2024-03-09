@@ -1,7 +1,8 @@
-import * as React from "react";
+import React from "react";
 import * as styles from "./radio-player.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
+// Radio player component
 const RadioPlayer = () => {
   return (
     <div className={styles.radioPlayerWrap}>
@@ -11,8 +12,9 @@ const RadioPlayer = () => {
         alt="WGTB logo"
       />
       <figcaption className={styles.audioCaption}>Georgetown Radio</figcaption>
-      <audio controls src="https://s4.radio.co/sbeba14c92/listen">
-        <track kind="captions" src="" srclang="en" label="English" />
+      <audio controls autoPlay src="https://s4.radio.co/sbeba14c92/listen">
+        <track kind="captions" src="" srcLang="en" label="English" />
+        Your browser does not support the audio element.
       </audio>
     </div>
   );

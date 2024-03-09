@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .tag {
-  background-color: #bad6f3;
+  background-color: #ec83c7;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
@@ -13,6 +13,5 @@
   text-decoration: none;
 }
 .active {
-  background-color: #2f82da;
-  /* border-radius: 10px; */
+  background-color: #e34faf;
 }

@@ -3,23 +3,29 @@ import { Link, graphql } from "gatsby";
 import * as styles from "../styles/contentfulArticle.module.css";
 import Layout from "../components/header/layout";
 import Footer from "../components/footer/footer.js";
+import RadioPlayer from "../components/radio-player/radio-player.js";
 
 const Article = ({ data }) => {
   return (
     <main>
       <Layout></Layout> {/*header and navbar*/}
+      <RadioPlayer />
       <div className={styles.articleContain}>
         <h1 className={styles.title}>{data.contentfulArticle.title}</h1>
         <Link
           className={styles.author}
           to={`../authors/${data.contentfulArticle.author}`}
         >
-          <h2 className={styles.author}>
+          <h3 className={styles.author}>
             Author: {data.contentfulArticle.author}
-          </h2>
+          </h3>
         </Link>
-        <h2>{data.contentfulArticle.datetime}</h2>
-        <img src={data.contentfulArticle.image.file.url} alt={data.title} />
+        <h3>{data.contentfulArticle.datetime}</h3>
+        <img
+          className="articleImage"
+          src={data.contentfulArticle.image.file.url}
+          alt={data.title}
+        />
         <p className={styles.articleContent}>
           {data.contentfulArticle.content.content}
         </p>

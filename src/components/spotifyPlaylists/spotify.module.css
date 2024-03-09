@@ -1,0 +1,14 @@
+.playlists {
+  display: flex;
+  flex-direction: column;
+}
+.spotifyPlaylist {
+  margin-bottom: 10px;
+}
+.playlists iframe {
+  width: 100%;
+  height: 500px;
+  max-width: 380px;
+  max-height: 380px;
+  border: none;
+}

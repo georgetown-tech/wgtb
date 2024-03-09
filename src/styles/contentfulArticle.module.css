@@ -1,32 +1,35 @@
+/* @import url(./global.css); */
+
 .articleContain {
   display: flex;
   flex-direction: column;
-  margin: 10px 200px;
+  margin: 10px 100px;
   align-items: center;
   text-align: center;
 }
-img {
+.articleImage {
   width: 85%;
   height: auto;
   margin: 10px;
 }
-h2 {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  color: #6c757d;
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-size: 1.2em;
-}
 .title {
   font-size: 1.5em;
   margin: 0px;
+  margin-bottom: 10px;
   color: black;
   font-weight: 900;
 }
 .author {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 10px;
   color: #b07bbf;
   text-decoration: none;
+}
+.date {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .articleContent {
@@ -35,4 +38,5 @@ h2 {
   color: #212529;
   font-family: "Open Sans";
   text-align: left;
+  line-height: 2;
 }

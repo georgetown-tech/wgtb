@@ -1,0 +1,54 @@
+.container {
+  /*container header and navbar*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #525252;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+.header {
+  /* contains images and header logo */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.record {
+  display: inline-block;
+  position: relative;
+  bottom: -40px;
+  max-width: 20%;
+  animation-duration: 9s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+}
+.logoContainer {
+  width: 40%;
+  max-width: 300px;
+  display: inline-block;
+}
+.headerSubtext {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+  top: -25px;
+}
+nav {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

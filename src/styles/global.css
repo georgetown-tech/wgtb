@@ -1,0 +1,27 @@
+/* global styles */
+body {
+  margin: 0;
+}
+p {
+  font-family: "Open Sans";
+}
+h2 {
+  font-family: "PT Serif", serif;
+  font-size: 15px;
+}
+h3 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #212529;
+}
+h4 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #212529;
+}
+Link,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #b07bbf;
+}

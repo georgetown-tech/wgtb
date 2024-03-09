@@ -1,31 +1,45 @@
 import React from "react";
-import {Link} from "gatsby";
-import "./navbar.css"; 
+import { Link } from "gatsby";
+import * as styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div className="main-menu">
-      <ul className="navbar">
-      <li>
-          <Link to="/" activeClassName="active">home</Link>
+    <div className={styles.mainMenu}>
+      <ul className={styles.navbar}>
+        <li>
+          <Link to="/" activeClassName={styles.active}>
+            home
+          </Link>
         </li>
         <li>
-          <Link to="/blog" activeClassName="active">the rotation</Link>
+          <Link to="/blog" activeClassName={styles.active}>
+            the rotation
+          </Link>
         </li>
         <li>
-          <Link to="/shows" activeClassName="active">shows</Link>
+          <Link to="/shows" activeClassName={styles.active}>
+            shows
+          </Link>
         </li>
         <li>
-          <Link to="/schedule" activeClassName="active">schedule</Link>
+          <Link to="/schedule" activeClassName={styles.active}>
+            schedule
+          </Link>
         </li>
         <li>
-          <Link to="/dj-services" activeClassName="active">dj services</Link>
+          <Link to="/dj-services" activeClassName={styles.active}>
+            dj services
+          </Link>
         </li>
         <li>
-          <Link to="/contact-us" activeClassName="active">contact us</Link>
+          <Link to="/contact-us" activeClassName={styles.active}>
+            contact us
+          </Link>
         </li>
         <li>
-          <Link to="/about" activeClassName="active">about</Link>
+          <Link to="/about" activeClassName={styles.active}>
+            about
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,0 +1,84 @@
+.container {
+  background-color: #c2c2c2;
+}
+
+.footerDivider {
+  background-color: #b11b7d;
+  height: 15px;
+  border: none;
+}
+
+.footerHeader {
+  font-family: "PT Serif", serif;
+  color: #212529;
+  text-decoration: underline;
+}
+.footerWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans";
+}
+.footerWrap ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+li {
+  text-wrap: nowrap;
+}
+
+.footerColumn {
+  padding: 0px 30px;
+}
+.footerColumn:first-child {
+  margin-left: 150px;
+}
+.footerColumn:last-child {
+  margin-right: 150px;
+}
+.footerLogo {
+  margin-top: 20px;
+  max-width: 150px;
+  max-height: auto;
+}
+.spacing {
+  height: 50px;
+  border: none;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials .image {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.socials .image:hover {
+  color: white;
+  background-color: #212529;
+  transition: background-color 0.5s ease;
+}
+.socials .image:hover img {
+  filter: invert(1);
+  transition: filter 0.5s ease;
+}
+.socials .imageSoundcloud {
+  width: 80px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.socials .imageSoundcloud:hover {
+  color: white;
+  background-color: #212529;
+  transition: background-color 0.5s ease;
+}
+.socials .imageSoundcloud:hover img {
+  filter: invert(1);
+  transition: filter 0.5s ease;
+}

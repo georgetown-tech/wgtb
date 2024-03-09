@@ -1,0 +1,6 @@
+.slick-arrow {
+  color: #b11b7d;
+}
+.slick-arrow::before {
+  color: #b11b7d;
+}

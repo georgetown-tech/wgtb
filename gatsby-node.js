@@ -2,7 +2,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   // Query data from GraphQL
-  const tagQuery = await graphql(`
+  const dataQuery = await graphql(`
     query {
       allContentfulArticle {
         nodes {
@@ -25,16 +25,28 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allContentfulAuthorProfile {
+        nodes {
+          name
+          photo {
+            url
+          }
+          bio {
+            bio
+          }
+        }
+      }
     }
   `);
 
   // Handle errors
-  if (tagQuery.errors) {
-    throw result.errors;
+  if (dataQuery.errors) {
+    throw dataQuery.errors;
   }
 
-  // Process data and create pages
-  const articles = tagQuery.data.allContentfulArticle.nodes;
+  // Process data
+  const articles = dataQuery.data.allContentfulArticle.nodes;
+  const authorNodes = dataQuery.data.allContentfulAuthorProfile.nodes;
 
   // Group articles by tags
   const articlesByTag = {};
@@ -81,12 +93,16 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create pages for each author
   Object.keys(articlesByAuthor).forEach((authorName) => {
     const authorArticles = articlesByAuthor[authorName];
+    const authorProfile = authorNodes.find(
+      (node) => node.name.toLowerCase() === authorName.toLowerCase()
+    );
     createPage({
       path: `/authors/${authorName}`, // URL path for the page
       component: require.resolve("./src/pages/authors.js"), // Component to use for rendering the page
       context: {
         authorName,
         authorArticles,
+        authorProfile,
       },
     });
   });

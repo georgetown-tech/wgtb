@@ -1,0 +1,41 @@
+/*  Original color palette: https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
+/* WGTB recommended color palette: https://coolors.co/418fde-ef95cf-ffa51f-b07bbf-ff914d-016d39 */
+.playlistContainer {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* background-color: #fadcef; */
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.homepageWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f5f5f5; */
+}
+.sectionHeader {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #b11b7d;
+  padding: 0 10px 5px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  width: 80%;
+  font-family: "PT Serif", serif;
+  color: #292929;
+}
+.carouselWrap {
+  max-width: 80%;
+  margin-top: 30px;
+}
+.reviews {
+  display: block;
+}
+.playlists {
+  display: block;
+}
