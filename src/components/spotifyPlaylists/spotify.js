@@ -23,7 +23,7 @@ const Spotify = () => {
   const spotifyPlaylists = data.allContentfulSpotifyPlaylist.nodes;
 
   return (
-    <div className={styles.playlists}>
+    <div className={styles.playlistContainer}>
       {spotifyPlaylists.map((playlist) => (
         <iframe
           title={playlist.title}
