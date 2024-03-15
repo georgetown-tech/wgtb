@@ -16,7 +16,7 @@ const NavMenu = () => {
   return (
     <nav>
       {/* horizontal menu for large screens */}
-      <ul>
+      <ul className={styles.navList}>
         <li>
           <Link
             to="/"
@@ -99,7 +99,11 @@ const NavMenu = () => {
         </li>
       </ul>
       {/* vertical menu for small screens */}
-      <ul className={sidebarVisibility ? styles.sidebar : styles.hideSidebar}>
+      <ul
+        className={`${
+          sidebarVisibility ? styles.sidebar : styles.hideSidebar
+        } ${styles.navList}`}
+      >
         <li
           onClick={hideSidebar}
           onKeyDown={(e) => e.key === "Enter" && hideSidebar()}

@@ -4,7 +4,7 @@ nav {
   width: 100vw;
   font-family: "Open Sans";
 }
-ul {
+.navList {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -12,14 +12,14 @@ ul {
   justify-content: center;
   gap: 10px;
 }
-ul li {
+.navList li {
   margin: 11px 0px;
 }
-ul li:last-child {
+.navList li:last-child {
   margin-right: 15px;
 }
 
-ul a {
+.navList a {
   text-decoration: none;
   color: #151515;
   font-size: 1.2em;
@@ -28,14 +28,14 @@ ul a {
   background-color: none;
   border: none;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans";
 }
-ul a.active {
+.navList a.active {
   padding: 12px 30px;
   background-color: #b11b7d;
 }
 
-ul li:hover {
+.navList li:hover {
   cursor: pointer;
   text-decoration: underline;
   text-decoration-thickness: 3px;
