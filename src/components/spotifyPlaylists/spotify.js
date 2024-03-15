@@ -18,8 +18,6 @@ const Spotify = () => {
   if (!data || !data.allContentfulSpotifyPlaylist) {
     return <h3>No playlists available</h3>;
   }
-
-  console.log(data);
   const spotifyPlaylists = data.allContentfulSpotifyPlaylist.nodes;
 
   return (
@@ -31,7 +29,7 @@ const Spotify = () => {
           src={playlist.embedLink}
           width="100%"
           height="380"
-          allowfullscreen=""
+          allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
       ))}

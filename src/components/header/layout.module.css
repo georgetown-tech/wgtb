@@ -52,3 +52,22 @@ nav {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 800px) {
+  .headerSubtext {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .headerSubtext {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 425px) {
+  .headerSubtext {
+    font-size: 0.8em;
+    margin-top: 30px;
+  }
+}

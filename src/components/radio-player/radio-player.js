@@ -12,7 +12,11 @@ const RadioPlayer = () => {
         alt="WGTB logo"
       />
       <figcaption className={styles.audioCaption}>Georgetown Radio</figcaption>
-      <audio controls autoPlay src="https://s4.radio.co/sbeba14c92/listen">
+      <audio
+        controls
+        autoPlay="false"
+        src="https://s4.radio.co/sbeba14c92/listen"
+      >
         <track kind="captions" src="" srcLang="en" label="English" />
         Your browser does not support the audio element.
       </audio>

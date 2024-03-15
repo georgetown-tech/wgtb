@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navbar from "../navbar/Navbar";
+import NavMenu from "../navbar/Navbar";
 import * as styles from "./layout.module.css";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -24,7 +24,7 @@ const Layout = () => {
       </Link>
       <h1 className={styles.headerSubtext}>Welcome to Georgetown Radio</h1>
       <nav>
-        <Navbar />
+        <NavMenu />
       </nav>
     </div>
   );
